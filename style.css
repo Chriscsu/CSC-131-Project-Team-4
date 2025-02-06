@@ -1,24 +1,30 @@
 
+.navbar nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .navbar ul{
+    display: flex;
     list-style-type: none;
     background-color: none;
     padding: 0px;
     margin: 0px;
-    
+    margin-left: auto;    
 }
 .navbar a{
     color: white;
     text-decoration: none;
     padding: 15px;
     display:block;
-    text-align: right;
+}
+.navbar li{
+    margin-left: 15px;
 }
 
 .navbar a:hover{
     background-color: hwb(0 63% 20%)
-}
-.navbar li{
-    float: right;
 }
 
 .logo{
