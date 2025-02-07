@@ -1,12 +1,24 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: red;
+}
+
 header {
     background-color: black;
     width: 100%;
     padding-right: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:30px 10%;
 }
 .navbar nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: black;
 }
 .navbar ul{
     display: flex;
@@ -14,69 +26,34 @@ header {
     background-color: none;
     padding: 0px;
     margin: 0px;
-    margin-left: auto;    
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin-left: auto;   
+    background-color: black;
+} 
+.navbar li{
+    margin-left: 15px;
     background-color: black;
 }
-li,a,button{
+.navbar li,a{
     font-weight: bold;
     font-size: 20px;
     color: white;
     text-decoration: none;
     padding: 15px;
     display:block;
-}
-.navbar li{
-    margin-left: 15px;
-}
-
-.navbar a:hover{
-    background-color: hwb(0 16% 81%);
-    text-decoration: underline;
-    color: #d1a95f;
+    transition: all 0.3s ease 0s;
+    background-color: black;
 }
 
+.navbar li a:hover{
+    color:tan
 }
+
 .logo{
     width: 40px;
     cursor: pointer;
+    background-color: black;
 }
-header{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding:30px 10%;
-}
-.nav{
-    list-style: none;
-}
-.nav li{
-    display: inline-block;
-    padding: 0px 20px;
-}
-.nav li a:hover{
-    color: beige;
-}
-button{
-    cursor:pointer;
-    padding: 9px 25px;
-    background-color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 50px;
-}
-button:hover{
-    background-color: rgba(245, 245, 220, 70%);;
-    width: 100px;
-    background-blend-mode: lighten;
-    opacity: 20%;
-    position: relative;
-    display: block;
-    margin: 0%;
-    padding: 0%;
-}
+ 
 main{
     padding-top: 120px;
 }
@@ -85,4 +62,8 @@ main{
     align-items: center;
     margin: 0px;
     padding: 0px;
+    background-color: black;
+}
+h1:hover{
+    color:beige
 }
