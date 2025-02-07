@@ -1,10 +1,13 @@
-
+header {
+    background-color: black;
+    width: 100%;
+    padding-right: 100px;
+}
 .navbar nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 .navbar ul{
     display: flex;
     list-style-type: none;
@@ -31,7 +34,9 @@ li,a,button{
 }
 
 .navbar a:hover{
-    background-color: hwb(0 63% 20%)
+    background-color: hwb(0 16% 81%);
+    text-decoration: underline;
+    color: #d1a95f;
 }
 
 }
@@ -64,4 +69,20 @@ button{
 }
 button:hover{
     background-color: rgba(245, 245, 220, 70%);;
+    width: 100px;
+    background-blend-mode: lighten;
+    opacity: 20%;
+    position: relative;
+    display: block;
+    margin: 0%;
+    padding: 0%;
+}
+main{
+    padding-top: 120px;
+}
+#Logo{
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
 }
