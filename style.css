@@ -12,8 +12,15 @@
     padding: 0px;
     margin: 0px;
     margin-left: auto;    
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black;
 }
-.navbar a{
+li,a,button{
+    font-weight: bold;
+    font-size: 20px;
     color: white;
     text-decoration: none;
     padding: 15px;
@@ -27,9 +34,34 @@
     background-color: hwb(0 63% 20%)
 }
 
+}
 .logo{
-    width: 100px;
-    position: fixed;
-    background-blend-mode: lighten;
-    opacity: 20%;
+    width: 40px;
+    cursor: pointer;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:30px 10%;
+}
+.nav{
+    list-style: none;
+}
+.nav li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav li a:hover{
+    color: beige;
+}
+button{
+    cursor:pointer;
+    padding: 9px 25px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 50px;
+}
+button:hover{
+    background-color: rgba(245, 245, 220, 70%);;
 }
