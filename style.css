@@ -1,35 +1,75 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: ltc-bodoni-175, serif;
+    font-style: normal;
+    font-weight: 400;
+}
 
+header {
+    background-color: black;
+    width: 100%;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:30px 10%;
+}
 .navbar nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: black;
 }
-
 .navbar ul{
     display: flex;
     list-style-type: none;
     background-color: none;
     padding: 0px;
     margin: 0px;
-    margin-left: auto;    
+    margin-left: auto;   
+    background-color: black;
+} 
+.navbar li{
+    margin-left: 15px;
+    background-color: black;
 }
-.navbar a{
+.navbar li,a{
+    font-weight: bold;
+    font-size: 20px;
     color: white;
     text-decoration: none;
     padding: 15px;
     display:block;
-}
-.navbar li{
-    margin-left: 15px;
+    transition: all 0.3s ease 0s;
+    background-color: black;
 }
 
-.navbar a:hover{
-    background-color: hwb(0 63% 20%)
+.navbar li a:hover{
+    color:#d1a95f;
 }
 
 .logo{
-    width: 100px;
-    position: fixed;
-    background-blend-mode: lighten;
-    opacity: 20%;
+    width: 40px;
+    cursor: pointer;
+    background-color: black;
+}
+ 
+main{
+    padding-top: 120px;
+}
+#Logo{
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+h1:hover{
+    color:beige
+}
+main div h1{
+    font-size: 100px;
 }
