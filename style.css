@@ -7,34 +7,38 @@
 }
 
 header {
-    width: 100%;
-    padding-right: 100px;
-    display: flex;
-    justify-content: space-between;  /* Adjusted for better alignment */
-    align-items: center;
-    padding: 30px 10%;
-    background: linear-gradient(rgba(10, 10, 10, 0.9) 40%, rgba(34, 34, 34) 80%);  
-
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ min-width: 100%;
+ background: linear-gradient(rgba(10, 10, 10, .8) 40%, rgb(34, 34, 34) 90%);
 }
 
-.navbar nav {
+.navbar{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items:center;
+    justify-content: center;
+    gap:15px;
+}
+#Logo {
+    width: 70px; /* Adjust logo size */
+    height: auto;
+    cursor: pointer;
 }
 
 .navbar ul {
     display: flex;
     list-style-type: none;
-    background-color: transparent;  /* Make sure the list has a transparent background */
     padding: 0;  /* Remove padding */
     margin: 0;   /* Remove margin */
-    margin-left: auto;  /* Align to the right */
+justify-content: space-evenly;
 }
 
 .navbar li {
     margin-left: 15px;  /* Space between items */
     font-family: "Libre Bodoni";
+
 }
 
 .navbar li a {
@@ -43,7 +47,7 @@ header {
     color: white;
     text-decoration: none;
     padding: 15px;
-    display: block;
+    display: inline-block;
     transition: all 0.3s ease 0s;
 }
 
@@ -51,21 +55,11 @@ header {
     color: #d1a95f;
 }
 
-.logo {
-    width: 40px;
-    cursor: pointer;
-}
 
 main {
-    padding-top: 120px;
+    padding-top: 100px;
 }
 
-#Logo {
-    display: flex;
-    align-items: center;
-    margin: 0px;
-    padding: 0px;
-}
 
 h1:hover {
     color: beige;
