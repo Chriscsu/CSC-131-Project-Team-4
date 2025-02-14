@@ -13,18 +13,31 @@ header {
  width: 100%;
  min-width: 100%;
  background: linear-gradient(rgba(10, 10, 10, .8) 40%, rgb(34, 34, 34) 90%);
+ z-index: 10;
 }
 
 .navbar{
     display: flex;
     align-items:center;
-    justify-content: center;
+    justify-content: space-between;
     gap:15px;
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+}
+.navbar_cont {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    gap: 30px;
 }
 #Logo {
     width: 70px; /* Adjust logo size */
+    max-width: 100px;
     height: auto;
     cursor: pointer;
+    display: block;
 }
 
 .navbar ul {
@@ -32,7 +45,7 @@ header {
     list-style-type: none;
     padding: 0;  /* Remove padding */
     margin: 0;   /* Remove margin */
-justify-content: space-evenly;
+    justify-content: flex-start;
 }
 
 .navbar li {
@@ -67,4 +80,79 @@ h1:hover {
 
 main div h1 {
     font-size: 100px;
+}
+@media screen and (max-width: 900px) {
+    .navbar_cont {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .hovercolor {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 300px;
+        position: fixed;
+        right: 0;
+        top: 0;
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+        height: auto;
+        z-index: -1;
+        padding-right: 25px;
+    }
+
+    .hovercolor.active {
+        top: 80px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 10;
+        transform: translateY(0);
+        font-size: 1.6rem;
+        background: rgb(34, 34, 34) 90%;
+    }
+
+    #Logo {
+        padding-left: 25px;
+    }
+
+    .mobile-menu .bar {
+        width: 30px;
+        margin: 5px auto;
+        height: 4px;
+        transition: all 0.3s ease-in-out;
+        background: white;
+        display: block;
+    }
+
+    .nav_item {
+        width: 100%;
+    }
+    
+    .nav_link {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .mobile-menu .bar {
+        display: block;
+        cursor: pointer;
+    }
+    .mobile-menu.is-active .bar {
+        background: #d1a95f;
+    }
 }

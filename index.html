@@ -13,15 +13,22 @@
 <body style="background: linear-gradient(rgba(10, 10, 10, .8) 40%, rgb(34, 34, 34) 90%);  ">
     <header>
             <nav class="navbar">
-                <a href="index.html" id="Logo">
-                    <img src="logo/logo.png">
-                </a>
-                <ul class="hovercolor">
-                    <li> <a href="#"> Home</a> </li>
-                    <li> <a href="#"> Athlete Portfolio</a> </li>
-                    <li> <a href="#"> About us</a> </li>
-                    <li> <a href="#"> FAQ</a> </li>
-                </ul>
+                <div class="navbar_cont">
+                    <a href="index.html" id="Logo">
+                        <img src="logo/logo.png">
+                    </a>
+                    <div class="mobile-menu" id="mobile-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <ul class="hovercolor">
+                            <li class="nav_item"> <a href="#" class="nav_link"> Home</a> </li>
+                            <li class="nav_item"> <a href="#" class="nav_link"> Athlete Portfolio</a> </li>
+                            <li class="nav_item"> <a href="#" class="nav_link"> About us</a> </li>
+                            <li class="nav_item"> <a href="#" class="nav_link"> FAQ</a> </li>
+                    </ul>
+                </div>
             </nav>
     </header>
     <main>
@@ -31,6 +38,14 @@
               </h1>
         </div>
     </main>
+    <script>
+        const menu = document.querySelector('#mobile-menu');
+        const menuLinks = document.querySelector('.hovercolor');
 
+        menu.addEventListener('click', function () {
+            menu.classList.toggle('is-active');
+            menuLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
