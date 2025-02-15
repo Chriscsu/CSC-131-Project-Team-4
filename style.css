@@ -1,3 +1,10 @@
+:root {
+    --primary-color: white;
+    --hover-color: #d1a95f;
+    --background-color: rgb(34, 34, 34);
+    --header-background: linear-gradient(rgba(10, 10, 10, .8) 40%, var(--background-color) 90%);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,7 +19,7 @@ header {
  left: 0;
  width: 100%;
  min-width: 100%;
- background: linear-gradient(rgba(10, 10, 10, .8) 40%, rgb(34, 34, 34) 90%);
+ background: var(--header-background);
  z-index: 10;
 }
 
@@ -24,6 +31,8 @@ header {
     max-width: 1600px;
     width: 100%;
     margin: 0 auto;
+    height: 80px;
+
 }
 .navbar_cont {
     display: flex;
@@ -57,7 +66,7 @@ header {
 .navbar li a {
     font-weight: bold;
     font-size: 20px;
-    color: white;
+    color: var(--primary-color);
     text-decoration: none;
     padding: 15px;
     display: inline-block;
@@ -65,7 +74,7 @@ header {
 }
 
 .navbar li a:hover {
-    color: #d1a95f;
+    color: var(--hover-color);
 }
 
 
@@ -75,7 +84,7 @@ main {
 
 
 h1:hover {
-    color: beige;
+    color: var(--hover-color);
 }
 
 main div h1 {
@@ -115,19 +124,16 @@ main div h1 {
         z-index: 10;
         transform: translateY(0);
         font-size: 1.6rem;
-        background: rgb(34, 34, 34) 90%;
+        background: var(--background-color);
     }
 
-    #Logo {
-        padding-left: 25px;
-    }
 
     .mobile-menu .bar {
         width: 30px;
         margin: 5px auto;
         height: 4px;
         transition: all 0.3s ease-in-out;
-        background: white;
+        background: var(--primary-color);
         display: block;
     }
 
@@ -146,6 +152,7 @@ main div h1 {
         top: 20%;
         right: 5%;
         transform: translate(5%, 20%);
+        cursor: pointer;
     }
 
     .mobile-menu .bar {
@@ -153,6 +160,6 @@ main div h1 {
         cursor: pointer;
     }
     .mobile-menu.is-active .bar {
-        background: #d1a95f;
+        background: var(--hover-color);
     }
 }
