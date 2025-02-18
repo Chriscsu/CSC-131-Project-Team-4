@@ -3,7 +3,11 @@
     --hover-color: #d1a95f;
     --background-color: rgb(34, 34, 34);
     --header-background: linear-gradient(rgba(10, 10, 10, .8) 40%, var(--background-color) 90%);
+    --primary-font: ltc-bodoni-175, serif;
+    --secondary-font: 'georgia';
+    --tertiary-font: "Lato", serif;
 }
+
 
 
 header {
@@ -52,7 +56,7 @@ header {
 
 .navbar li {
     margin-left: 15px;  /* Space between items */
-    font-family: "Libre Bodoni";
+    font-family: var(--primary-font);
 
 }
 
