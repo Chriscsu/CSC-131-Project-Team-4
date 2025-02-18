@@ -102,29 +102,31 @@ main div h1 {
     }
 
     .hovercolor {
-        display: flex;
+        display: none;
         flex-direction: column;
         margin: 0;
         width: 300px;
         position: fixed;
         right: 0;
-        top: 0;
+        top: 80px;
         opacity: 0;
-        transform: translateY(-100%);
+        transform: translateY(-20px);
         transition: transform 0.3s ease-in-out;
         height: auto;
         z-index: -1;
         padding-right: 25px;
+        background: var(--background-color);
+        pointer-events: none;
     }
 
     .hovercolor.active {
-        top: 80px;
+        display: flex;
         opacity: 1;
-        transition: all 0.5s ease;
         z-index: 10;
         transform: translateY(0);
-        font-size: 1.6rem;
-        background: var(--background-color);
+        transition-delay: 0s;
+        transition: all 0.5s ease;
+        pointer-events: auto;
     }
 
 
