@@ -165,3 +165,183 @@ header {
         background: var(--hover-color);
     }
 }
+
+#about_body {
+    font-family: Arial, sans-serif;
+    background-color: #fefbea;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+.about_us {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #FEFBEA;
+}
+
+.about_mission_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+}
+.about_mission_section img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+.about_mission_section .about_section_text {
+    flex: 1;
+    padding-right: 20px;
+    font-family: var(--secondary-font);
+    font-size: 20px;
+}
+.about_story_section .about_section_text {
+    flex: 1;
+    padding-right: 20px;
+    font-family: var(--secondary-font);
+    font-size: 20px;
+}
+
+.about_story_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.about_story_section img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.aboout_story_section .about_section_text {
+    flex: 1;
+    font-family: var(--secondary-font);
+    font-size: 20px;
+}
+
+.about_section_title {
+    font-size: 36px;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about_section_text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+.team_cont {
+    background-color: rgb(34, 34, 34);
+    width: 100vw;
+    justify-self: center;
+    color: #FEFBEA;
+    padding: 40px 0;
+    margin-left: 0;
+}
+.about_team_section {
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(34, 34, 34);
+}
+
+.team_members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+
+.team_member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+}
+
+.team_name {
+    font-size: 20px;
+    font-weight: bold;
+    min-height: 40px;
+    color: #FEFBEA;
+}
+
+.team_role {
+    font-size: 16px;
+    color: #FEFBEA;
+    min-height: 40px;
+}
+
+.team_description {
+    font-size: 16px;
+    color: #FEFBEA;
+    margin-bottom: 5px;
+}
+.team_image {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+@media (min-width: 750px) {
+    .team_members {
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+    }
+}
+
+.about_faq_section {
+    text-align: left;
+}
+
+.faq_item {
+    margin: 10px 0;
+}
+
+.faq_question {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.faq_answer {
+    font-size: 16px;
+    color:grey;
+}
+
+.about_connect_section {
+    margin-top: 20px;
+}
+
+.about_connect_text {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: grey;
+}
+.about_connect_section .about_section_title{
+    margin-bottom: 0;
+    font-size: 24px;
+}
+.connect_button {
+    background-color: #d1a95f;
+    color: #FEFBEA;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.connect_button:hover {
+    background-color: #b88a4f;
+}
