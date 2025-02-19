@@ -9,7 +9,9 @@
 }
 
 
-
+.font{
+    font-family: var(--primary-font);
+}
 header {
  position: top;
  top: 0;
