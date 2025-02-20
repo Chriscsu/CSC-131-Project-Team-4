@@ -8,7 +8,14 @@
     --tertiary-font: "Lato", serif;
 }
 
+h2, h3{
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.6)
+}
 
+html, body{
+    height: 100%;
+    margin: 0;
+}
 .font{
     font-family: var(--primary-font);
 }
@@ -232,6 +239,8 @@ header {
     margin-top: 20px;
     font-weight: bold;
     margin-bottom: 20px;
+    text-align: center;
+    
 }
 
 .about_section_text {
@@ -240,7 +249,6 @@ header {
     margin: 10px 0;
 }
 .team_cont {
-    background-color: rgb(34, 34, 34);
     width: 100vw;
     justify-self: center;
     color: #FEFBEA;
@@ -249,10 +257,11 @@ header {
 }
 .about_team_section {
     text-align: left;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 100vw;
+    margin: 0 ;
     padding: 20px;
     background-color: rgb(34, 34, 34);
+    padding: 10px;
 }
 
 .team_members {
