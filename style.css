@@ -1,7 +1,7 @@
 :root {
     --primary-color: white;
     --hover-color: #d1a95f;
-    --background-color: rgb(34, 34, 34);
+    --background-color: rgb(52, 52, 52);
     --header-background: linear-gradient(rgba(10, 10, 10, .8) 40%, var(--background-color) 90%);
     --primary-font: ltc-bodoni-175, serif;
     --secondary-font: 'georgia';
@@ -30,6 +30,7 @@ header {
 }
 
 .navbar{
+    background: linear-gradient(rgba(10, 10, 10, 0.8) 0%, var(--background-color) 100%);
     display: flex;
     align-items:center;
     justify-content: space-between;
@@ -48,8 +49,7 @@ header {
     gap: 30px;
 }
 #Logo {
-    width: 120px; /* Adjust logo size */
-    max-width: 100px;
+    width: 100px; /* Adjust logo size */
     height: auto;
     cursor: pointer;
     display: block;
@@ -143,6 +143,7 @@ header {
         transition: all 0.3s ease-in-out;
         background: var(--primary-color);
         display: block;
+        cursor: pointer;
     }
 
     .nav_item {
@@ -155,17 +156,12 @@ header {
         width: 100%;
     }
 
-    #mobile-menu {
-        position: top;
+    .mobile-menu {
+        position: absolute;
         margin-right: 25px;
-        top: 20%;
-        right: 5%;
+        top: 20px;
+        right: 1%;
         transform: translate(5%, 20%);
-        cursor: pointer;
-    }
-
-    .mobile-menu .bar {
-        display: block;
         cursor: pointer;
     }
     .mobile-menu.is-active .bar {
