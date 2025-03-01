@@ -25,12 +25,11 @@ header {
  left: 0;
  width: 100%;
  min-width: 100%;
- background: var(--header-background);
+ background: linear-gradient(rgba(0, 0, 0, 0.8) 0%, var(--background-color) 100%);
  z-index: 10;
 }
 
 .navbar{
-    background: linear-gradient(rgba(10, 10, 10, 0.8) 0%, var(--background-color) 100%);
     display: flex;
     align-items:center;
     justify-content: space-between;
@@ -178,7 +177,6 @@ header {
 }
 
 .about_us {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
@@ -190,6 +188,8 @@ header {
     align-items: center;
     justify-content: space-between;
     text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .about_mission_section img {
     width: 300px;
@@ -215,6 +215,8 @@ header {
     justify-content: space-between;
     text-align: left;
     margin-bottom: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .about_story_section img {
@@ -308,6 +310,8 @@ header {
 
 .about_faq_section {
     text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .faq_item {
