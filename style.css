@@ -1,7 +1,7 @@
 :root {
     --primary-color: white;
     --hover-color: #d1a95f;
-    --background-color: rgb(34, 34, 34);
+    --background-color: rgb(52, 52, 52);
     --header-background: linear-gradient(rgba(10, 10, 10, .8) 40%, var(--background-color) 90%);
     --primary-font: ltc-bodoni-175, serif;
     --secondary-font: 'georgia';
@@ -25,7 +25,7 @@ header {
  left: 0;
  width: 100%;
  min-width: 100%;
- background: var(--header-background);
+ background: linear-gradient(rgba(0, 0, 0, 0.8) 0%, var(--background-color) 100%);
  z-index: 10;
 }
 
@@ -48,8 +48,7 @@ header {
     gap: 30px;
 }
 #Logo {
-    width: 120px; /* Adjust logo size */
-    max-width: 100px;
+    width: 100px; /* Adjust logo size */
     height: auto;
     cursor: pointer;
     display: block;
@@ -143,6 +142,7 @@ header {
         transition: all 0.3s ease-in-out;
         background: var(--primary-color);
         display: block;
+        cursor: pointer;
     }
 
     .nav_item {
@@ -155,17 +155,12 @@ header {
         width: 100%;
     }
 
-    #mobile-menu {
-        position: top;
+    .mobile-menu {
+        position: absolute;
         margin-right: 25px;
-        top: 20%;
-        right: 5%;
+        top: 20px;
+        right: 1%;
         transform: translate(5%, 20%);
-        cursor: pointer;
-    }
-
-    .mobile-menu .bar {
-        display: block;
         cursor: pointer;
     }
     .mobile-menu.is-active .bar {
@@ -182,7 +177,6 @@ header {
 }
 
 .about_us {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
@@ -194,6 +188,8 @@ header {
     align-items: center;
     justify-content: space-between;
     text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .about_mission_section img {
     width: 300px;
@@ -219,6 +215,8 @@ header {
     justify-content: space-between;
     text-align: left;
     margin-bottom: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .about_story_section img {
@@ -312,6 +310,8 @@ header {
 
 .about_faq_section {
     text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .faq_item {
