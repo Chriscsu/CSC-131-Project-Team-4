@@ -183,6 +183,10 @@ header {
     background-color: #FEFBEA;
 }
 
+.contacy_us{
+
+}
+
 .about_mission_section {
     display: flex;
     align-items: center;
@@ -355,22 +359,58 @@ header {
     background-color: #b88a4f;
 }
 
+/* CONTACT SECION*/
+
+.contact_us {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    background-color: #FEFBEA;
+}
+
+.contacy_faq_section{
+    background-color: #d1a95f;
+}
+
+
+.contact_section_title {
+    font-size: 36px;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
 .form_text{
     font-size: 18px;
+    font-family: var(--primary-font);
+    border-radius: 10px;
+
+}
+.form_hover:hover{
+    transform: scale(1.050);
 }
 
 textarea{
     width: 300px;
     height: 100px;
+    overflow: auto;
+    font-family: var(--primary-font)
 }
 .submit{
     width: 75px;
     height: 40px;
     font-size: 18px;
     background-color: #d1a95f;
-    color: #FEFBEA;
+    border-color: black;
     font-size: 16px;
     cursor: pointer;
     border-radius: 10px;
+    box-shadow: -2px 2px 7px;
 
+}
+.submit:hover{
+    opacity: 80%;
+    transform: scale(1.040);
 }
