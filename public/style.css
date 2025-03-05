@@ -320,6 +320,9 @@ header {
 
 .faq_item {
     margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #999797;
+    cursor: pointer;
 }
 
 .faq_question {
@@ -330,7 +333,8 @@ header {
 
 .faq_answer {
     font-size: 16px;
-    color:grey;
+    color: rgb(134, 132, 132);
+    display: none;
 }
 
 .about_connect_section {
@@ -340,12 +344,17 @@ header {
 .about_connect_text {
     font-size: 16px;
     margin-bottom: 10px;
-    color: grey;
+    color: rgb(126, 124, 124);
 }
 .about_connect_section .about_section_title{
     margin-bottom: 0;
     font-size: 24px;
 }
+.arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
 .connect_button {
     background-color: #d1a95f;
     color: #FEFBEA;
