@@ -42,7 +42,7 @@ Before running this project, ensure you have the following installed:
    ```
 
 ## Project Structure
-
+```
 /project-folder
 │── public/
 │   │── index.html         # Main HTML file
@@ -52,6 +52,7 @@ Before running this project, ensure you have the following installed:
 │── package.json       # Dependencies
 │── .firebaserc        # Firebase project settings
 └── firebase.json      # Firebase Hosting configuration
+```
 ## Deployment (Firebase Hosting)
 
 Github commits should automatically be added to the live URL if not
