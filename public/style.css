@@ -8,8 +8,34 @@
     --tertiary-font: "Lato", serif;
 }
 
+h1 {
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.2;
+    width: 85%;
+    height: auto;
+    margin: 0;
+    /*text-transform: uppercase;*/
+}
+
+h2 {
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 30px;
+    color: #FEFBEA;
+    text-align: center;
+    margin: 0px;
+
+}
+
 h2, h3{
     text-shadow: 1px 1px 2px rgba(0,0,0,0.6)
+}
+
+p {
+    font-family: var(--secondary-font);
+    font-size: 18px;
 }
 
 html, body{
@@ -276,6 +302,198 @@ header {
         margin-bottom: 10px;
     }
 }
+
+
+                                /*----------Home Page - Main Section----------*/
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #FEFBEA;
+    /*border: 1px solid fuchsia;*/
+}
+
+                                            /*------Main Section - Intro-----*/
+#main_intro_container {
+    display: inline-flex;
+    /*border: 1px solid green;*/
+    width: 100%;
+    height: 400px;
+    background-color: #FEFBEA;
+}
+
+#main_intro_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*border: 1px solid purple;*/
+    width: 60%;
+    padding: 20px 45px;
+}
+
+#main_intro_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border: 1px solid red;*/
+    width: 40%;
+}
+
+.main_intro_image_placeholder {
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+    background-color: lightgray;
+}
+
+                                            /*------Main Section - Content-----*/
+#main_content_container {
+    width: 100%;
+    /*border: 1px solid blue;*/
+    background-color: #000;
+}
+
+#main_content_container p {
+    color: #FEFBEA;
+}
+
+section {
+    display: flex;
+    margin: 15px 0px;
+    /*border: 1px solid green;*/
+}
+
+.main_row_one {
+    flex-direction: row;
+}
+
+.main_row_two {
+    flex-direction: row-reverse;
+}
+
+.main_row_one p, .main_row_two p {
+    width: 80%;
+    margin: 10px 10%;
+}
+
+.main_column {
+    flex-direction: column;
+}
+
+.main_column .main_text_container, .main_column .main_image_container {
+    width: 100%;
+}
+
+.main_column p {
+    text-align: center;
+}
+
+.main_column .main_image_container {
+    justify-content: space-around;
+}
+.main_image_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding: 15px;
+}
+
+.main_image_placeholder {
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+    background-color: lightgray;
+}
+
+.main_text_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /*border: 1px solid darkgoldenrod;*/
+    width: 60%;
+    padding: 20px 0px;
+}
+
+.home_intro_buttons_container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+    border: 1.5px solid #000;
+    border-radius: 2px;
+    text-decoration: none;
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    font-weight: 500;
+    margin: 20px 25px 0px 25px;
+    position: relative;
+    
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    color: blue;
+}
+
+#main_intro_text button{
+    left: -10%;
+    background-color: #bcbcbc;
+    border-color: #000;
+}
+
+#main_intro_text button:hover {
+    background-color: #000;
+    color: #FEFBEA;
+
+}
+
+.button_container {
+    display: flex;
+    justify-content: center;
+}
+
+.button_container button {
+    background-color: #FEFBEA;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 5px;
+    margin: 25px;
+}
+
+.button_container button:hover {
+    background-color: #000;
+    color: #fefbeaf0;
+    border-color: #fefbeaf0;
+    
+}
+
+#home_feature_featuredAthletes .main_image_container {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+#home_feature_featuredAthletes .main_image_placeholder {
+    margin: 0px 20px;
+    width: 275px;
+    min-width: 275px;
+    height: 335px;
+}
+
+
+aside {         /*Testimonial quotes*/
+    font-style: italic;
+    color: #FEFBEA;
+    width: 25%;
+}
+
+
+                                /*----------About Us----------*/
 
 #about_body {
     font-family: Arial, sans-serif;
