@@ -8,7 +8,7 @@
     --tertiary-font: "Lato", serif;
 }
 
-h1 {
+.main h1 {
     font-family: var(--primary-font);
     font-weight: 700;
     font-size: 48px;
@@ -19,7 +19,7 @@ h1 {
     /*text-transform: uppercase;*/
 }
 
-h2 {
+.main h2 {
     font-family: var(--primary-font);
     font-weight: 600;
     font-size: 30px;
@@ -33,7 +33,7 @@ h2, h3{
     text-shadow: 1px 1px 2px rgba(0,0,0,0.6)
 }
 
-p {
+.main p {
     font-family: var(--secondary-font);
     font-size: 18px;
 }
@@ -305,7 +305,7 @@ header {
 
 
                                 /*----------Home Page - Main Section----------*/
-main {
+.main {
     display: flex;
     flex-direction: column;
     background-color: #FEFBEA;
@@ -356,7 +356,7 @@ main {
     color: #FEFBEA;
 }
 
-section {
+.main section {
     display: flex;
     margin: 15px 0px;
     /*border: 1px solid green;*/
@@ -420,7 +420,7 @@ section {
     width: 100%;
 }
 
-button {
+.main button {
     padding: 10px;
     border: 1.5px solid #000;
     border-radius: 2px;
@@ -433,11 +433,11 @@ button {
     
 }
 
-button:hover {
+.main button:hover {
     cursor: pointer;
 }
 
-button:active {
+.main button:active {
     color: blue;
 }
 
@@ -486,7 +486,7 @@ button:active {
 }
 
 
-aside {         /*Testimonial quotes*/
+.main aside {         /*Testimonial quotes*/
     font-style: italic;
     color: #FEFBEA;
     width: 25%;
