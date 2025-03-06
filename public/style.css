@@ -168,6 +168,115 @@ header {
     }
 }
 
+.footer {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    padding: 40px 20px;
+    font-family: var(--secondary-font);
+}
+
+.footer_cont {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.footer_pcm {
+    flex: 1.3;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footer_logo_img {
+    width: 50px;
+    height: auto;
+    border-right: 2px solid white;
+
+}
+
+.footer_logo_name {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: var(--primary-font);
+    margin-left: 8px;
+}
+
+.footer_pcm p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+
+.footer_main, .footer_additional {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.footer_main p, .footer_additional p, .footer_social p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.footer_main li, .footer_additional li {
+    margin-bottom: 10px;
+}
+
+.footer_main li a, .footer_additional li a {
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: normal;
+    transition: color 0.3s ease;
+}
+
+.footer_main li a:hover, .footer_additional li a:hover {
+    color: var(--hover-color);
+}
+
+.footer_social {
+    flex: 0.7;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.instagram_icon i {
+    font-size: 40px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.instagram_icon:hover i {
+    transform: scale(1.1);
+    color: #b88a4f;
+}
+
+@media screen and (max-width: 900px) {
+    .footer_cont {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_main, .footer_additional, .footer_pcm, .footer_social {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
 #about_body {
     font-family: Arial, sans-serif;
     background-color: #fefbea;
@@ -183,9 +292,6 @@ header {
     background-color: #FEFBEA;
 }
 
-.contacy_us{
-
-}
 
 .about_mission_section {
     display: flex;
