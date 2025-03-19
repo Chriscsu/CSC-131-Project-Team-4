@@ -491,8 +491,59 @@ header {
     color: #FEFBEA;
     width: 25%;
 }
+                                /*----------Home Mobile View----------*/
+
+@media screen and (max-width: 750px) {
 
 
+    #main_intro_container {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    #main_intro_text {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #main_intro_image {
+        width: 100%;
+    }
+
+    .main_row_one, .main_row_two {
+        flex-direction: column;
+    }
+
+    .main_text_container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .main_image_container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #home_feature_featuredAthletes .main_image_container {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 10px 0;
+    }
+
+    #home_feature_successStories .main_image_container {
+        display: block;
+    }
+
+    .main aside {
+        width: 90%;
+        justify-self: center;
+        margin-bottom: 20px;
+    }
+
+}
                                 /*----------About Us----------*/
 
 #about_body {
