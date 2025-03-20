@@ -16,11 +16,45 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/logo/favicon-16x16.png">
     <link rel="manifest" href="/logo/site.webmanifest">
     <style>
-        main {background-color: #FEFBEA;}
-        h2 {padding-top: 30px;padding-left: 30%; font-size: 46px;}
-        h3 {padding-top: 30px;padding-left: 30%}
-        p {}
-		.Overview { }
+        main{background-color: #FEFBEA;}
+        h2{
+            text-align: center;
+            font-weight: bold;
+            font-size: 96px;
+        }
+        h3{
+            font-size: 24px;
+        }
+        .MainContainer{
+            display: flex;
+            flex-flow: column nowrap;
+            background-color: black;
+            padding-bottom: 40px;
+            gap: 20px;
+        }
+        .subcontainer{
+            display: flex;
+            flex-flow: row nowrap;
+            align-self: center;
+            padding-top: 15px; padding-left: 40px; padding-right: 40px;
+            gap: 50px;
+            justify-items: right;
+        }
+        .Preface{
+            padding-left: 50px; padding-right: 50px;
+            text-align: center;
+        }
+        .subheader{
+        color: white;
+        }
+        .contact{
+            color: black;
+            text-align: center;
+            padding-bottom: 25px;
+        }
+        .text{
+        color: white;
+        }
     </style>
 </head>
 <body id="about_body" style="background: linear-gradient(rgba(10, 10, 10, .8) 40%, rgb(34, 34, 34) 90%);">
@@ -50,51 +84,81 @@
             </div>
         </nav>
     </header>
-<main class="services">    
-    <h2 id="test">Services</h2>
-    <section class="Overview">
-        <div>
-            <h3>Overview</h3>
-            <p class="OurServices">
-				Our Services<br>
-                At Players Club Management, we offer a range of services designed to help student-athletes maximize their Name, Image, and Likeness (NIL) opportunities. Our expertise ensures athletes get the best
-                possible deals while building a sustainable personal brand.
-			</p>
-			<br>
-			<p class="NIL">NIL Deal Negotiation<br>
-				We work closely with brands and businesses to negotiate fair and beneficial NIL deals for our athletes. Our team ensures that each contract aligns with the athlete’s goals and long-term success.
-			</p>
-			<br>
-			<p class="Sponsor">Sponsorship & Endorsement Opportunities<br>
-				Connecting athletes with the right sponsors is our specialty. We seek out partnerships that enhance our athletes' brand value and provide meaningful financial opportunities.
-			</p>
-			<br>
-			<p class="Social">Social Media Growth & Monetization<br>
-				We help athletes expand their online presence and monetize their social media platforms effectively. From content strategy to engagement optimization, we ensure athletes maximize their digital
-				impact.
-			</p>
-			<br>
-			<p class="Personal">Personal Branding & Marketing Strategy
-				Building a strong personal brand is key to long-term success. We assist athletes in developing their brand identity, creating compelling content, and positioning themselves as marketable figures in the
-				sports industry.
-			</p>
-			<br>
-			<p class=" Financial">Financial Literacy & Contract Review<br>
-				Understanding NIL earnings and contract terms is crucial. We provide financial literacy education and contract review services to ensure our athletes make informed decisions about their earnings and
-				agreements. We also offer specialized training and workshops to educate athletes about NIL opportunities, contract reviews, and financial management.
-			</p>
-			<br>
-			<p class="Business">Business & Entrepreneurship Guidance<br>
-				For athletes looking to explore business ventures, we provide strategic guidance on launching their own products, businesses, or investment opportunities.Our goal is to equip athletes with the
-				knowledge and skills to thrive beyond their playing careers.
-			</p>
-			<br>
-			<p class="GetStarted">Get Started Today<br>
-				Ready to take your NIL journey to the next level? Contact us today and let’s build your brand together!
-				Get in Touch
-            </p>                
+<main class="Services">    
+    <h2>Services</h2>
+    <h3 class="Preface">
+        At Players Club Management, we offer a range of services designed to help student-athletes maximize their Name, Image, and Likeness (NIL)
+        opportunities. Our expertise ensures athletes get the best possible deals while building a sustainable personal brand.
+    </h3>
+    <br>
+    <div class="MainContainer">
+        <div class="subcontainer">
+            <div >
+                <h3 class="subheader">
+                NIL Deal Negotiation
+                </h3>
+                <p class="text">
+                    We work closely with brands and businesses to negotiate fair and beneficial NIL deals for our athletes. Our team ensures that
+                    each contract aligns with the athlete's goals and long-term success.
+                </p>
+            </div>
+            <div>
+                <h3 class="subheader">
+                Sponsorship & Endorsement Opportunities
+                </h3>
+                <p class="text">
+                    Connecting athletes with the right sponsors is our specialty. We seek out partnerships that enhance our athletes' brand value
+                    and provide meaningful financial opportunities.
+                </p>
+            </div>
         </div>
-    </section>
+        <div class="subcontainer">
+            <div>
+                <h3 class="subheader">
+                    Social Media Growth & Monetization
+                </h3>
+                    <p class="text">
+                        We help athletes expand their online presence and monetize their social media platforms effectively. From content strategy to
+                        engagement optimization, we ensure athletes maximize their digital impact.
+                    </p>
+            </div>
+            <div>
+                <h3 class="subheader">
+                Personal Branding & Marketing Strategy
+                </h3>    
+                <p class="text">
+                    Building a strong personal brand is key to long-term success. We assist athletes in developing their brand identity, creating
+                    compelling content, and positioning themselves as marketable figures in the sports industry.
+                </p>
+            </div>
+        </div>
+        <div class="subcontainer">
+            <div>
+                <h3 class="subheader">
+                    Financial Literacy & Contract Review
+                </h3>
+                <p class="text">
+                    Understanding NIL earnings and contract terms is crucial. We provide financial literacy education and contract review services
+                    to ensure our athletes make informed decisions about their earnings and agreements. We also offer specialized training and
+                    workshops to educate athletes about NIL opportunities, contract reviews, and financial management.
+                </p>
+            </div>
+            <div>
+                <h3 class="subheader">
+                    Business & Entrepreneurship Guidance
+                </h3>
+                <p class="text">
+                    For athletes looking to explore business ventures, we provide strategic guidance on launching their own products, businesses,
+                    or investment opportunities. Our goal is to equip athletes with the knowledge and skills to thrive beyond their playing careers.
+                </p>
+            </div>
+        </div>
+    </div>
+    <h3 class="Preface">Get Started Today</h3>
+    <p class="contact">
+    Ready to take your NIL journey to the next level? Contact us today and let’s build your brand together!
+    <br>Get in Touch
+    </p>
 </main>
 </body>
 </html>
