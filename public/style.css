@@ -130,7 +130,6 @@ header {
     padding: 10px 20px;
     background-color: #FEFBEA !important; 
     
-    border: 4px solid orange!important; 
     border: 3.5px solid orange!important; 
     border-radius: 30px 30px; /* Rounded corners */
     transition: all 0.3s ease; /* Smooth effect */   
