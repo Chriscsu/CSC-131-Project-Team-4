@@ -828,14 +828,15 @@ header {
 /* CONTACT SECION*/
 
 .contact_us {
-    margin: 0;
-    padding: 20px;
+    margin: 0 auto;
+    padding-top: 20px;
     text-align: center;
     background-color: #FEFBEA;
 }
 
 .contacy_faq_section{
-    background-color: #d1a95f;
+    background-color: #cfa454;
+    height: 100vh;
 }
 
 
@@ -843,7 +844,7 @@ header {
     font-size: 36px;
     margin-top: 20px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 0 auto;
     text-align: center;
     
 }
