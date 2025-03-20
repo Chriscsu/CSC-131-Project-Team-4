@@ -23,7 +23,12 @@ function clickAnswer(item) {
     arrow.style.transform = isVisible ? "rotate(0deg)" : "rotate(90deg)";
 }
 
-
+document.querySelectorAll('.footer_main p, .footer_additional p, .footer_pcm p').forEach(header => {
+    header.addEventListener('click', () => {
+      const parent = header.parentElement;
+      parent.classList.toggle('active');
+    });
+  });
 let submitBtn = document.getElementById("submitBtn")
 submitBtn.attachEvent('onclick', myFunctionReference);
 const myFunctionReference = function(){
