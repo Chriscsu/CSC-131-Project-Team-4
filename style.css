@@ -44,7 +44,7 @@ header {
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     gap: 30px;
 }
 #Logo {
@@ -94,6 +94,7 @@ header {
 .navbar li a:hover {
     color: var(--hover-color);
 }
+
 @media screen and (max-width: 900px) {
     .navbar_cont {
         display: flex;
@@ -140,7 +141,7 @@ header {
         margin: 5px auto;
         height: 4px;
         transition: all 0.3s ease-in-out;
-        background: var(--primary-color);
+        background: white;
         display: block;
         cursor: pointer;
     }
