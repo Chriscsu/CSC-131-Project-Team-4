@@ -3,18 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Players Club Management</title>
+    <title>Admin - Players Club Management</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
+    <!-- <script src="script.js" defer></script> -->
+    <script src="index.js" defer></script>
+    <script src="https://kit.fontawesome.com/481272558b.js" crossorigin="anonymous"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/logo/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/logo/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/logo/favicon-16x16.png">
     <link rel="manifest" href="/logo/site.webmanifest">
+    <script defer src="/__/firebase/11.4.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/11.4.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/11.4.0/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/11.4.0/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/11.4.0/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/11.4.0/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/11.4.0/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/11.4.0/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/11.4.0/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/11.4.0/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 </head>
 <body style= "background: linear-gradient(rgba(10, 10, 10, .8) 40%, rgb(34, 34, 34) 90%)">
     <header >
@@ -43,8 +61,14 @@
                 </div>
             </nav>
     </header>
-    <main style="background-color: #FEFBEA; height: 100%;">
-        <h1 class="text-black text-5xl text-center">Main Page</h1>
+    <main class = "main">
+        <div>
+            <form>
+                <input type="email" id="username" placeholder="Email">
+                <input type="password" id="password" placeholder="Password">
+                <button type="submit" id="submitBtn">Sign Up</button>
+            </form>
+        </div>
     </main>
 </body>
 </html>

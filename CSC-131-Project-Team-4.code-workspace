@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../CSS, HTML Learn"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "CSC-131-Project-Team-4",
+		"sqltools.connections": [
+			{
+				"mysqlOptions": {
+					"authProtocol": "default",
+					"enableSsl": "Disabled"
+				},
+				"previewLimit": 50,
+				"server": "localhost",
+				"port": 3306,
+				"driver": "MySQL",
+				"name": "test",
+				"database": "airbnb",
+				"username": "Chris",
+				"askForPassword": true
+			}
+		]
+	}
+}
