@@ -548,11 +548,21 @@ header {
     overflow-y: hidden;
 }
 
-#home_feature_featuredAthletes .main_image_placeholder {
+#home_feature_featuredAthletes img {
     margin: 0px 20px;
     width: 275px;
     min-width: 275px;
-    height: 335px;
+    height: 335px; /*275px*/
+}
+
+#home_feature_featuredAthletes img:hover {
+   
+}
+
+#home_feature_featuredAthletes figcaption {
+    color: #FEFBEA;
+    text-align: center;
+    font-family: var(--secondary-font);
 }
 
 
