@@ -677,6 +677,7 @@ header {
 .about_mission_section .about_section_text {
     flex: 1;
     padding-right: 20px;
+    padding-left: 20px;
     font-family: var(--secondary-font);
     font-size: 20px;
 }
@@ -825,6 +826,7 @@ header {
 
 .about_connect_section {
     margin-top: 20px;
+    padding: 10px 40px 10px 40px;
 }
 
 .about_connect_text {
