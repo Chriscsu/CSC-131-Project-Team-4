@@ -54,7 +54,7 @@ header {
  background: linear-gradient(rgba(0, 0, 0, 0.8) 0%, var(--background-color) 100%);
  z-index: 10;
 }
-
+                                    /*------Navigation------*/
 .navbar{
     display: flex;
     align-items:center;
@@ -219,7 +219,7 @@ header {
         background: var(--hover-color);
     }
 }
-
+                                    /*-------Footer--------*/
 .footer {
     background-color: rgb(34, 34, 34);
     color: white;
@@ -548,11 +548,17 @@ header {
     overflow-y: hidden;
 }
 
-#home_feature_featuredAthletes .main_image_placeholder {
+#home_feature_featuredAthletes img {
     margin: 0px 20px;
     width: 275px;
     min-width: 275px;
     height: 335px;
+}
+
+#home_feature_featuredAthletes figcaption {
+    color: #FEFBEA;
+    font-family: var(--secondary-font);
+    text-align: center;
 }
 
 
@@ -561,6 +567,7 @@ header {
     color: #FEFBEA;
     width: 25%;
 }
+
                                 /*----------Home Mobile View----------*/
 
 @media screen and (max-width: 750px) {
@@ -592,7 +599,7 @@ header {
 
     .main_image_container {
         width: 100%;
-        padding: 15px;
+        padding: 0px; /*Might change to 0px for max 425px, was 15px*/
     }
 
     #home_feature_featuredAthletes .main_image_container {
@@ -614,6 +621,28 @@ header {
     }
 
 }
+                                    /*----Tablet View: Homepage-----*/
+@media screen and (min-width: 720px) and (max-width: 1024px){
+
+    #main_intro_text {
+        padding: 10px 0px 15px 15px;
+    }
+
+    #main_intro_image img {
+        width: 100%;
+    }
+
+    .main_text_container p {
+        margin: 20px;
+        width: 90%;
+    }
+
+    .main_image_container {
+        padding: 0;
+    }
+
+}
+ 
                                 /*----------About Us----------*/
 
 #about_body {
