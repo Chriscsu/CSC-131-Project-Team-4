@@ -642,7 +642,20 @@ header {
     }
 
 }
- 
+                                    /*----Large Screen View: Homepage*/
+ @media screen and (min-width: 1520px) {
+
+    #main_intro_image img {
+        max-width: 600px;
+    }
+
+    #home_feature_featuredAthletes .main_image_container img {
+        min-width: 400px;
+        min-height: 500px;
+        object-fit: cover;
+    }
+
+ }
                                 /*----------About Us----------*/
 
 #about_body {
