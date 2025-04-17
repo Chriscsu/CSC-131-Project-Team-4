@@ -877,7 +877,55 @@ textarea{
     box-shadow: -2px 2px 7px;
 
 }
+
+
+
+/* slide */
 .submit:hover{
     opacity: 80%;
     transform: scale(1.040);
 }
+.right_arrow:hover{
+    color: #b88a4f;
+    cursor: pointer;
+}
+.left_arrow:hover{
+    color: #b88a4f;
+    cursor: pointer;
+}
+/* Basic styles */
+#cardSlider {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px; /* Space between cards */
+    scroll-behavior: smooth;
+  }
+  
+  .card {
+    flex-shrink: 0;
+    width: 300px;  /* Adjust based on your design */
+    height: 400px; /* Adjust height */
+    background-color: lightgray; /* Placeholder background */
+    border-radius: 8px;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 768px) {
+    #cardSlider {
+      padding: 0 16px; /* Add padding on small screens */
+    }
+  
+    .flex-none {
+      width: 220px; /* Reduce card width for medium screens */
+      height: 300px; /* Reduce card height */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .flex-none {
+      width: 150px; /* Even smaller card width for smaller screens */
+      height: 250px; /* Adjust height for mobile */
+    }
+  }
+  
+
