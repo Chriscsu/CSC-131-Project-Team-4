@@ -929,3 +929,13 @@ textarea{
     opacity: 80%;
     transform: scale(1.040);
 }
+
+.contact_us input, .contact_us textarea {
+    background-color: #ffffff;
+    border: 1px solid #000;
+}
+
+.contact_us textarea {
+    resize: both;
+    max-width: 700px;
+}
