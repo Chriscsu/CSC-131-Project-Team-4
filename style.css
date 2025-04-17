@@ -379,6 +379,8 @@ header {
     /*border: 1px solid green;*/
     width: 100%;
     height: 400px;
+    max-width: 1600px;
+    align-self: center;
     background-color: #FEFBEA;
 }
 
@@ -425,10 +427,14 @@ header {
 
 .main_row_one {
     flex-direction: row;
+    max-width: 1800px;
+    justify-self: center;
 }
 
 .main_row_two {
     flex-direction: row-reverse;
+    max-width: 1800px;
+    justify-self: center;
 }
 
 .main_row_one p, .main_row_two p {
@@ -438,6 +444,8 @@ header {
 
 .main_column {
     flex-direction: column;
+    max-width: 1800px;
+    justify-self: center;
 }
 
 .main_column .main_text_container, .main_column .main_image_container {
@@ -874,10 +882,30 @@ header {
 }
 
 /* CONTACT SECION*/
-
+.get_in_touch {
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    background-color: #FEFBEA;
+    padding: 40px 0 40px 0;
+}
+.get_in_touch_title {
+    font-size: 36px;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.get_in_touch p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #000;
+    padding: 0 40px 0 40px;
+    text-align: center;
+}
 .contact_us {
     margin: 0 auto;
-    padding-top: 20px;
+    padding: 20px 0 40px 0;
     text-align: center;
     background-color: #FEFBEA;
 }

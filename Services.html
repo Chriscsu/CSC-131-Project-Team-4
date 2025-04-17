@@ -31,6 +31,7 @@
             flex-flow: column nowrap;
             background-color: black;
             padding-bottom: 40px;
+            padding-top: 40px;
             gap: 20px;
         }
         .subcontainer{
@@ -40,18 +41,41 @@
             padding-top: 15px; padding-left: 40px; padding-right: 40px;
             gap: 50px;
             justify-items: right;
+            max-width: 1600px;
         }
         .Preface{
             padding-left: 50px; padding-right: 50px;
             text-align: center;
+            max-width: 1600px;
+            justify-self: center;
         }
+        .get_started{
+            padding: 20px;
+            justify-items: center;
+
+        }
+        .connect_button{
+            background-color: #d1a95f;
+            color: #FEFBEA;
+            padding-top: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        .connect_button:hover {
+            background-color: #b88a4f;
+        }   
         .subheader{
-        color: white;
+            color: white;
+            margin-bottom: 5px;
+        }
+        .sub_item{
+            max-width: 650px;
         }
         .contact{
             color: black;
             text-align: center;
-            padding-bottom: 25px;
+            padding-bottom: 15px;
         }
         .text{
         color: white;
@@ -94,7 +118,7 @@
     <br>
     <div class="MainContainer">
         <div class="subcontainer">
-            <div >
+            <div class="sub_item">
                 <h3 class="subheader">
                 NIL Deal Negotiation
                 </h3>
@@ -103,7 +127,7 @@
                     each contract aligns with the athlete's goals and long-term success.
                 </p>
             </div>
-            <div>
+            <div class="sub_item">
                 <h3 class="subheader">
                 Sponsorship & Endorsement Opportunities
                 </h3>
@@ -114,7 +138,7 @@
             </div>
         </div>
         <div class="subcontainer">
-            <div>
+            <div class="sub_item">
                 <h3 class="subheader">
                     Social Media Growth & Monetization
                 </h3>
@@ -123,7 +147,7 @@
                         engagement optimization, we ensure athletes maximize their digital impact.
                     </p>
             </div>
-            <div>
+            <div  class="sub_item">
                 <h3 class="subheader">
                 Personal Branding & Marketing Strategy
                 </h3>    
@@ -134,7 +158,7 @@
             </div>
         </div>
         <div class="subcontainer">
-            <div>
+            <div  class="sub_item">
                 <h3 class="subheader">
                     Financial Literacy & Contract Review
                 </h3>
@@ -144,7 +168,7 @@
                     workshops to educate athletes about NIL opportunities, contract reviews, and financial management.
                 </p>
             </div>
-            <div>
+            <div  class="sub_item">
                 <h3 class="subheader">
                     Business & Entrepreneurship Guidance
                 </h3>
@@ -155,11 +179,16 @@
             </div>
         </div>
     </div>
-    <h3 class="Preface">Get Started Today</h3>
-    <p class="contact">
-    Ready to take your NIL journey to the next level? Contact us today and let’s build your brand together!
-    <br>Get in Touch
-    </p>
+    <div class="get_started">
+        <h3 class="Preface">Get Started Today</h3>
+        <p class="contact">
+        Ready to take your NIL journey to the next level? Contact us today and let’s build your brand together!
+        <br>
+        </p>
+        <a href="Contact.html">
+            <button class="connect_button" style="color: black"> Get in Touch</button>
+        </a>
+    </div>
 </main>
 <footer class="footer">
     <section class="footer_cont">
