@@ -37,13 +37,27 @@
         }
         .subcontainer{
             display: flex;
-            flex-flow: row nowrap;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
             align-self: center;
             padding-top: 15px; padding-left: 40px; padding-right: 40px;
             gap: 50px;
             justify-items: right;
-            max-width: 1600px;
+            max-width: 1450px;
             width: 100%;
+        }
+        .sub_item {
+            max-width: 650px;
+            flex: 1 1 300px;
+            box-sizing: border-box;
+            border: 2px solid #FEFBEA;
+            padding: 20px;
+            border-radius: 16px;
+            transition: transform 0.2s ease;
+        }
+        .sub_item:hover {
+            transform: translateY(-4px);
         }
         .Preface{
             padding-left: 50px; padding-right: 50px;
