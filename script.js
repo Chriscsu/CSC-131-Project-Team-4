@@ -46,10 +46,10 @@ function scrollSlider(direction) {
       return firstCard ? firstCard.offsetWidth : 0;
     };
   
-    const cardWidth = getCardWidth(); // Get the card width dynamically
-    if (cardWidth === 0) return;  // If no cards, don't do anything
+    const cardWidth = getCardWidth(); 
+    if (cardWidth === 0) return;  
   
-    // Scroll in the specified direction
     slider.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
   }
+  
   

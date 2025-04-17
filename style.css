@@ -966,3 +966,11 @@ textarea{
     resize: both;
     max-width: 700px;
 }
+.left_arrow:hover{
+    color: #b88a4f;
+    cursor: pointer;
+}
+.right_arrow:hover{
+    color: #b88a4f;
+    cursor: pointer;
+}
