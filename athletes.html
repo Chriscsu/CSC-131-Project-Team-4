@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players Club Management</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/481272558b.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/logo/favicon-16x16.png">
+    <link rel="manifest" href="/logo/site.webmanifest">
+</head>
+<body style="background: linear-gradient(rgba(10, 10, 10, .8) 40%, rgb(34, 34, 34) 90%);  ">
+    <header>
+        <nav class="navbar">
+            <div class="navbar_cont">
+                <div class="nav_left">
+                <a href="index.html" id="Logo">
+                    <img src="logo/logo.png" alt="Logo">
+                </a>
+                <div id="header_title">
+                    <span>Players Club Management</span>
+                </div>
+                </div>
+                <div class="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="hovercolor">
+                    <li class="nav_item"> <a href="index.html" class="nav_link"> Home</a> </li>
+                    <li class="nav_item"> <a href="athletes.html" class="nav_link"> Athletes</a> </li>
+                    <li class="nav_item"> <a href="about.html" class="nav_link"> About us</a> </li>
+                    <li class="nav_item"> <a href="Services.html" class="nav_link"> Services</a> </li>
+                    <li class="nav_item"> <a href="Contact.html" class="nav_item_btn nav_link"> Contact Us</a> </li>
+                </ul>
+            </div>
+        </nav>
+</header>
+<main class="bg-[#FEFBEA]">
+    <div class="flex lg:flex-row flex-col min-h-screen justify-center items-center md:px-32 p-8 gap-8">
+        <div class="w-full">
+            <img src="/images/atheleteImg.jpg" alt="Athlete Image" class="w-full rounded">
+        </div>
+        <div class="w-full w-96 space-y-4">
+            <h1 class="text-5xl lg:text-[96px] font-bold text-black">
+                John Smith
+            </h1>
+            <p class="text-xl lg:text-2xl font-semibold text-black">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam iste deleniti officiis reiciendis aliquid, sequi aliquam consectetur incidunt enim iusto velit minima cum sapiente perferendis dolorum. Ea tempora modi a!
+            </p>
+            <!-- <p class="text-[12px] font-bold text-black">
+                Football QB
+            </p> -->
+            <a href="/athletes.html">
+                <button class="border rounded-full bg-[#222222] px-4 py-2 text-xl cursor-pointer text-white hover:bg-[#FEFBEA] hover:text-black">
+                    Learn More
+                </button>
+            </a>
+        </div>
+    </div>
+</main>
+<section class="text-white mx-auto">
+    <div class="">
+        <h1 class="text-5xl md:text-[78px] text-center text-[#FEFBEA] py-16 font-semibold"> Meet The Athletes</h1>
+    <div class="border-t border-gray-300 -mt-6 mb-12 w-1/2 md:w-4xl mx-auto items-center mx-auto"></div>
+        
+    </div>
+    
+
+    <div class="relative w-full" style="overflow: hidden;">  
+        <button id="nextBtn" class=" right_arrow absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-transparent shadow px-3 py-2 rounded-full text-2xl hover:text-red" onclick="scrollSlider(1)">
+            →
+        </button>
+        <button id="prevButton" class="left_arrow absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-transparent shadow px-3 py-2 rounded-full text-2xl hover:text-red" onclick="scrollSlider(-1)">
+            ←
+        </button>
+        
+        <div id="cardSlider" class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory gap-x-6 px-8" style="overflow: hidden">
+            
+            <!-- Card 1 -->
+            <div class="flex-none snap-start w-[300px]">
+              <img src="images/player1.jpg" alt="First Player" class="rounded-lg w-full h-auto transition-transform duration-300 hover:scale-105">
+              <div class="text-left mt-2">
+                <h2 class="text-2xl">John Smith</h2>
+                <p class="text-[18px]">Wide Receiver | Sacramento State</p>
+              </div>
+            </div>
+
+        <div class="flex-none snap-start w-[300px]">
+            <img src="images/player2.jpg" alt="Second Player" class="rounded-lg w-full h-auto transition-transform duration-300 hover:scale-105">
+            <div class="text-left mt-2">
+              <h2 class="text-2xl">Michael Johnson</h2>
+              <p class="text-[18px]">Quarterback | Sacramento State</p>
+            </div>
+          </div>
+
+        <div class="flex-none snap-start w-[300px]">
+            <img src="images/player3.jpg" alt="Third Player" class="rounded-lg w-full h-auto transition-transform duration-300 hover:scale-105">
+            <div class="text-left mt-2">
+              <h2 class="text-2xl">David Brown</h2>
+              <p class="text-[18px]">Linebacker | Sacramento State</p>
+            </div>
+        </div>
+
+        <div class="flex-none snap-start w-[300px]">
+            <img src="images/player3.jpg" alt="Third Player" class="rounded-lg w-full h-auto transition-transform duration-300 hover:scale-105">
+            <div class="text-left mt-2">
+              <h2 class="text-2xl">David Brown</h2>
+              <p class="text-[18px]">Linebacker | Sacramento State</p>
+            </div>
+        </div>
+
+        <div class="flex-none snap-start w-[300px]">
+            <img src="images/player3.jpg" alt="Third Player" class="rounded-lg w-full h-auto transition-transform duration-300 hover:scale-105">
+            <div class="text-left mt-2">
+              <h2 class="text-2xl">David Brown</h2>
+              <p class="text-[18px]">Linebacker | Sacramento State</p>
+            </div>
+        </div>
+
+        <div class="flex-none snap-start w-[300px]">
+            <img src="images/player3.jpg" alt="Third Player" class="rounded-lg w-full h-auto transition-transform duration-300 hover:scale-105">
+            <div class="text-left mt-2">
+              <h2 class="text-2xl">David Brown</h2>
+              <p class="text-[18px]">Linebacker | Sacramento State</p>
+            </div>
+        </div>
+
+        <div class="flex-none snap-start w-[300px]">
+            <img src="images/player3.jpg" alt="Third Player" class="rounded-lg w-full h-auto transition-transform duration-300 hover:scale-105">
+            <div class="text-left mt-2">
+              <h2 class="text-2xl">David Brown</h2>
+              <p class="text-[18px]">Linebacker | Sacramento State</p>
+            </div>
+        </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+<footer class="footer">
+    <section class="footer_cont">
+        <div class="footer_pcm">
+            <a href="index.html" class="footer_logo">
+                <img src="/logo/logo.png" alt="logo" class="footer_logo_img">
+                <span class="footer_logo_name">Players Club Management</span>
+            </a>
+            <p>Santiago Zuniga, Founder & CEO</p>
+            <p>Email: <a href="mailto:playersclubmgmtsjz@gmail.com">playersclubmgmtsjz@gmail.com</a></p>
+            <p>Phone: 909-232-2422</p>
+        </div>
+        <div class="footer_main">
+            <p>Main Menu</p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="athletes.html">Athletes</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="Services.html">Services</a></li>
+            </ul>
+        </div>
+        <div class="footer_additional">
+            <p>Additional Information</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="Terms_Of_Service.html">Terms of Service</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+            </ul>
+        </div>
+        <div class="footer_social">
+            <p>Follow Us</p>
+            <a href="https://www.instagram.com/playersclubmgmt" target="_blank" class="instagram_icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </section>
+</footer>
+</body>
+</html>

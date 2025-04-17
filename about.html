@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players Club Management</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/481272558b.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/logo/favicon-16x16.png">
+    <link rel="manifest" href="/logo/site.webmanifest">
+</head>
+<body id="about_body" style="background: linear-gradient(rgba(10, 10, 10, .8) 40%, rgb(34, 34, 34) 90%);">
+    <header >
+        <nav class="navbar" >
+            <div class="navbar_cont">
+                <div class="nav_left">
+                <a href="index.html" id="Logo">
+                    <img src="logo/logo.png" alt="Logo">
+                </a>
+                <div id="header_title">
+                    <span>Players Club Management</span>
+                </div>
+                </div>
+                <div class="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="hovercolor">
+                    <li class="nav_item"> <a href="index.html" class="nav_link"> Home</a> </li>
+                    <li class="nav_item"> <a href="athletes.html" class="nav_link"> Athletes</a> </li>
+                    <li class="nav_item"> <a href="about.html" class="nav_link"> About us</a> </li>
+                    <li class="nav_item"> <a href="#" class="nav_link"> Services</a> </li>
+                    <li class="nav_item"> <a href="Contact.html" class="nav_item_btn nav_link"> Contact Us</a> </li>
+                </ul>
+            </div>
+        </nav>
+</header>
+<main class="about_us">    
+    <section class="about_mission_section" id="about_section_container">
+        <div class="about_text_content">
+            <h2 class="about_section_title">Our Mission</h2>
+            <p class="about_section_text">
+                At Players Club Management, we are dedicated to empowering student-athletes by maximizing their Name, Image, and Likeness (NIL) opportunities. Our mission is to help athletes build their personal brands, secure meaningful partnerships, and
+                create long-term financial success through strategic marketing and brand collaborations. We believe that every athlete deserves the opportunity to capitalize on their hard work and dedication, and we are here to guide them every step of the way.            </p>
+        </div>
+        <img src="/images/placeholder2.jpg" alt="Our Mission">
+    </section>
+    <section class="about_story_section" id="about_section_container">
+        <img src="/images/placeholder2.jpg" alt="Our Story">
+        <div class="about_text_content">
+            <h2 class="about_section_title">Our Story</h2>
+            <p class="about_section_text">
+                Players Club Management was founded with a passion for sports and a vision to help athletes navigate the evolving NIL landscape. As former athletes and business professionals, we recognized the need for a trusted, athlete-first agency that provides
+                guidance, support, and expertise in the NIL space. Our journey began with a commitment to ensuring that student-athletes are not only compensated fairly but also educated on financial literacy, brand building, and long-term career planning. Today,
+                we are proud to help athletes turn their talents into sustainable success.           
+             </p>
+        </div>
+    </section>
+        <section class="about_team_section">
+            <h2 class="about_section_title">Our Team</h2>
+            <div class="team_members">
+                <div class="team_member">
+                    <h3 class="team_name">Santiago Zuniga</h3>
+                    <p class="team_role">Founder & CEO</p>
+                    <p class="team_description">With a deep understanding of the NIL space and a passion for helping athletes succeed, Santiago leads Players Club Management with expertise and dedication. His vision is to create a platform where student-athletes can thrive both on and off the
+                        field.</p>
+                    <img src="/images/placeholder.jpg" alt="Santiago Zuniga" class="team_image">
+                </div>
+                <div class="team_member">
+                    <h3 class="team_name">David Zuniga</h3>
+                    <p class="team_role">Business Development Director</p>
+                    <p class="team_description">David brings a wealth of experience in business strategy and partnership development. His role focuses on creating strategic collaborations between athletes and brands, ensuring that every deal aligns with our athletes' goals and values.
+                    </p>
+                    <img src="/images/placeholder.jpg" alt="David Zuniga" class="team_image">
+                </div>
+                <div class="team_member">
+                    <h3 class="team_name">Santana Zuniga</h3>
+                    <p class="team_role">Marketing & Branding Specialist</p>
+                    <p class="team_description">Santana specializes in brand development and marketing strategies that amplify the reach and impact of our athletes. Her creativity and expertise help student-athletes build compelling personal brands that attract top-tier NIL opportunities.</p>
+                    <img src="/images/placeholder.jpg" alt="Santana Zuniga" class="team_image">
+                </div>
+            </div>
+        </section>
+    <section class="about_faq_section">
+        <h2 class="about_section_title">Frequently Asked Questions (FAQ)</h2>
+        <div class="faq_item" onclick="clickAnswer(this)">
+            <h3 class="faq_question"><span class="arrow">▶</span> What services does Players Club Management offer?</h3>
+            <p class="faq_answer">We provide NIL deal negotiation, brand partnership facilitation, marketing strategy development, financial literacy education, and personal brand coaching for student-athletes.</p>
+        </div>
+        <div class="faq_item" onclick="clickAnswer(this)">
+            <h3 class="faq_question"><span class="arrow">▶</span> Who can sign with Players Club Management?</h3>
+            <p class="faq_answer">We work with high school and college athletes across various sports who are looking to maximize their NIL potential.</p>
+        </div>
+        <div class="faq_item" onclick="clickAnswer(this)">
+            <h3 class="faq_question"><span class="arrow">▶</span> How does Players Club Management get paid?</h3>
+            <p class="faq_answer">We offer a tiered membership system, including a free entry-level tier. For higher-tier memberships, we require a $100 consulting fee deposit and take a 20% commission on any NIL deals secured.</p>
+        </div>
+        <div class="faq_item" onclick="clickAnswer(this)">
+            <h3 class="faq_question"><span class="arrow">▶</span> How can brands collaborate with Players Club Management?</h3>
+            <p class="faq_answer">Brands looking to partner with our athletes can reach out through our "Connect With Us" button or email us directly. We will match brands with the right athletes based on target audience, values, and campaign goals.</p>
+        </div>
+        <div class="faq_item" onclick="clickAnswer(this)">
+            <h3 class="faq_question"><span class="arrow">▶</span> Do you provide legal support for NIL contracts?</h3>
+            <p class="faq_answer">Yes, we work with legal professionals to ensure all NIL contracts are reviewed and compliant with NCAA and state regulations.</p>
+        </div>
+    </section>
+    <section class="about_connect_section">
+        <h2 class="about_section_title">Connect With Us</h2>
+        <p class="about_connect_text">Want to learn more about how Players Club Management can help you or your brand? Click the button below to get in touch with our team!</p>
+        <a href="Contact.html">
+            <button class="connect_button" style="color: black"> Contact Us</button>
+        </a>
+    </section>
+</main>
+<footer class="footer">
+    <section class="footer_cont">
+        <div class="footer_pcm">
+            <a href="index.html" class="footer_logo">
+                <img src="/logo/logo.png" alt="logo" class="footer_logo_img">
+                <span class="footer_logo_name">Players Club Management</span>
+            </a>
+            <p>Santiago Zuniga, Founder & CEO</p>
+            <p>Email: <a href="mailto:playersclubmgmtsjz@gmail.com">playersclubmgmtsjz@gmail.com</a></p>
+            <p>Phone: 909-232-2422</p>
+        </div>
+        <div class="footer_main">
+            <p>Main Menu</p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="athletes.html">Athletes</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </div>
+        <div class="footer_additional">
+            <p>Additional Information</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+            </ul>
+        </div>
+        <div class="footer_social">
+            <p>Follow Us</p>
+            <a href="https://www.instagram.com/playersclubmgmt" target="_blank" class="instagram_icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </section>
+</footer>
+</body>
+</html>
