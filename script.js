@@ -36,3 +36,20 @@ const myFunctionReference = function(){
 }
 
 console.log("hello")
+
+function scrollSlider(direction) {
+    const slider = document.getElementById('cardSlider');
+  
+    // Get the width of one card (dynamically)
+    const getCardWidth = () => {
+      const firstCard = slider.querySelector('.flex-none');
+      return firstCard ? firstCard.offsetWidth : 0;
+    };
+  
+    const cardWidth = getCardWidth(); // Get the card width dynamically
+    if (cardWidth === 0) return;  // If no cards, don't do anything
+  
+    // Scroll in the specified direction
+    slider.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
+  }
+  
