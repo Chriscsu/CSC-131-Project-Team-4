@@ -445,6 +445,7 @@ header {
 .main_column {
     flex-direction: column;
     max-width: 1800px;
+    justify-self: center;
 }
 
 .main_column .main_text_container, .main_column .main_image_container {
