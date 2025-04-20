@@ -12,32 +12,24 @@ async function addAthlete(athlete_id) {
         .eq('id', athlete_id);
 
     const athlete = data[0];
-
-    const imgUrl = athlete.profileImg;
+    const imgUrl = athlete.profileImg.replace(/\s/g, '');
 
     const figure = document.createElement('figure');
     const img = document.createElement('img');
     const figcaption = document.createElement('figcaption');
-
+   
     img.src = imgUrl;
-
     figcaption.innerHTML = `${athlete.name}<br>${athlete.sport}<br>${athlete.class}`;
-
+    console.log(data)
     figure.appendChild(img);
     figure.appendChild(figcaption);
     container.appendChild(figure);
 }
   
 document.addEventListener('DOMContentLoaded', () => {
-    addAthlete(36)
-    addAthlete(37)
-    addAthlete(38)
-    addAthlete(40)
-    addAthlete(40)
-    addAthlete(40)
+    addAthlete(46)
+    addAthlete(47)
 
-
-    
     const menu = document.querySelector('.mobile-menu');
     const menuLinks = document.querySelector('.hovercolor');
     if (menu && menuLinks) {
@@ -74,7 +66,6 @@ const myFunctionReference = function(){
     alert("hello")
 }
 
-console.log("hello")
 
 function scrollSlider(direction) {
     const slider = document.getElementById('cardSlider');
