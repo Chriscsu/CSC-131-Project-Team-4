@@ -4,28 +4,38 @@ const supabaseUrl = 'https://drlgexqbhttgphyvouqh.supabase.co'
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRybGdleHFiaHR0Z3BoeXZvdXFoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQ4NTQ2MDcsImV4cCI6MjA2MDQzMDYwN30.J05fM8edOWLRgg69wEvu8_703O-uDN2ZKRz8RFAivHE'
 const supabase = createClient(supabaseUrl, supabaseKey)
 
-async function updateAthleteInfo(athlete_id, caption_id, img_id) {
-    const figcaption = document.getElementById(caption_id)
-    const img = document.getElementById(img_id)
-  
+async function addAthlete(athlete_id) {
+    const container = document.getElementById('athlete_container');
     const {data} = await supabase
-      .from('athlete')
-      .select('*')
-      .eq('id', athlete_id)
-    
-    const athlete = data[0]
-  
-    figcaption.innerHTML = `${athlete.name}<br>${athlete.sport}<br>${athlete.class}`
-    img.src = athlete.profileImg;
+        .from('athlete')
+        .select('*')
+        .eq('id', athlete_id);
 
+    const athlete = data[0];
+
+    const imgUrl = athlete.profileImg;
+
+    const figure = document.createElement('figure');
+    const img = document.createElement('img');
+    const figcaption = document.createElement('figcaption');
+
+    img.src = imgUrl;
+
+    figcaption.innerHTML = `${athlete.name}<br>${athlete.sport}<br>${athlete.class}`;
+
+    figure.appendChild(img);
+    figure.appendChild(figcaption);
+    container.appendChild(figure);
 }
   
 document.addEventListener('DOMContentLoaded', () => {
+    addAthlete(36)
+    addAthlete(37)
+    addAthlete(38)
+    addAthlete(40)
+    addAthlete(40)
+    addAthlete(40)
 
-    updateAthleteInfo(36, 'cap1', 'athlete_img_1') 
-    updateAthleteInfo(37, 'cap2', 'athlete_img_2') 
-    updateAthleteInfo(38, 'cap3', 'athlete_img_3') 
-    updateAthleteInfo(40, 'cap4', 'athlete_img_4') 
 
     
     const menu = document.querySelector('.mobile-menu');
