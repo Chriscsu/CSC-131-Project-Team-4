@@ -19,16 +19,16 @@ async function addAthlete(athlete_id) {
     const figcaption = document.createElement('figcaption');
    
     img.src = imgUrl;
-    figcaption.innerHTML = `${athlete.name}<br>${athlete.sport}<br>${athlete.class}`;
-    console.log(data)
+    figcaption.innerHTML = `${athlete.name}<br>${athlete.sport}<br>${athlete.class}`
     figure.appendChild(img);
     figure.appendChild(figcaption);
     container.appendChild(figure);
 }
   
 document.addEventListener('DOMContentLoaded', () => {
-    addAthlete(46)
-    addAthlete(47)
+    for(let i = 30; i < 50; i++){
+        addAthlete(i)
+    }
 
     const menu = document.querySelector('.mobile-menu');
     const menuLinks = document.querySelector('.hovercolor');
