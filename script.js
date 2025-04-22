@@ -1,5 +1,4 @@
 import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm'
-
 const supabaseUrl = 'https://drlgexqbhttgphyvouqh.supabase.co'
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRybGdleHFiaHR0Z3BoeXZvdXFoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQ4NTQ2MDcsImV4cCI6MjA2MDQzMDYwN30.J05fM8edOWLRgg69wEvu8_703O-uDN2ZKRz8RFAivHE'
 const supabase = createClient(supabaseUrl, supabaseKey)
@@ -11,6 +10,7 @@ async function addAthlete(athlete_id) {
         .select('*')
         .eq('id', athlete_id);
 
+    if (data.length === 0) return;
     const athlete = data[0];
     const imgUrl = athlete.profileImg.replace(/\s/g, '');
 
@@ -44,15 +44,24 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    const nextBtn = document.getElementById('nextBtn');
+    const prevBtn = document.getElementById('prevButton');
+
+    if (nextBtn && prevBtn) {
+        nextBtn.addEventListener('click', () => scrollSlider(1));
+        prevBtn.addEventListener('click', () => scrollSlider(-1));
+    }
 });
 
-function clickAnswer(item) {
+ function clickAnswer(item) {
     let answer = item.querySelector(".faq_answer");
     let arrow = item.querySelector(".arrow");
     let isVisible = answer.style.display === "block";
     answer.style.display = isVisible ? "none" : "block";
     arrow.style.transform = isVisible ? "rotate(0deg)" : "rotate(90deg)";
 }
+window.clickAnswer = clickAnswer;
 
 document.querySelectorAll('.footer_main p, .footer_additional p, .footer_pcm p').forEach(header => {
     header.addEventListener('click', () => {
@@ -82,4 +91,6 @@ function scrollSlider(direction) {
     // Scroll in the specified direction
     slider.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
   }
+  window.scrollSlider = scrollSlider;
+
   
