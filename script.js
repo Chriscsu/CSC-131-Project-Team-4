@@ -29,7 +29,7 @@ async function addAthlete() {
         document.getElementById('athlete_image').src = imgUrl;
         document.getElementById('athlete_name').innerHTML = `<strong>${athlete.name || ''}</strong>`;
         document.getElementById('athlete_school').textContent = `School: ${athlete.school || 'N/A'}`;
-        document.getElementById('athlete_weight').textContent = `Weight: ${athlete.weight || 'N/A'}`;
+        document.getElementById('athlete_weight').textContent = `Weight: ${athlete.weight || 'N/A'} lbs`;
         document.getElementById('athlete_class').textContent = `Class: ${athlete.class || 'N/A'}`;
         document.getElementById('athlete_height').textContent = `Height: ${athlete.height || 'N/A'}`;
         document.getElementById('athlete_interests').textContent = `Interests: ${athlete.interests || 'N/A'}`;
