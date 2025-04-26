@@ -580,6 +580,108 @@ header {
     color: #FEFBEA;
     width: 25%;
 }
+.athlete_card {
+    border: 2px solid #FEFBEA;
+    border-radius: 20px;
+    transition: transform 0.2s ease;
+}
+
+.athlete_card:hover {
+    transform: translateY(-5px);
+}
+
+.pop_up {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    background-color: rgb(0 0 0 / 0.9);
+    align-items: center;
+    justify-content: center;
+}
+
+.main_athlete_card {
+    background-color: #fff7e7;  
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 900px;
+    max-height: 90%;
+    overflow-y: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation: card_fade 0.3s ease-in-out;
+}
+
+.main_athlete_text {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.main_athlete_image {
+    display: block;
+    max-width: 400px;
+    max-height: 350px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+body.athlete_open {
+    overflow: hidden;
+  }
+
+.athlete_details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.main_athlete_bottom {
+    margin-top: 20px;
+    padding-top: 15px;  
+    border-top: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.close {
+    color: gray;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
+.main_line {
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+    margin: 20px 0;
+}
+
+@keyframes card_fade {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 
                                 /*----------Home Mobile View----------*/
 

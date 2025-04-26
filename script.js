@@ -3,33 +3,67 @@ const supabaseUrl = 'https://drlgexqbhttgphyvouqh.supabase.co'
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRybGdleHFiaHR0Z3BoeXZvdXFoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQ4NTQ2MDcsImV4cCI6MjA2MDQzMDYwN30.J05fM8edOWLRgg69wEvu8_703O-uDN2ZKRz8RFAivHE'
 const supabase = createClient(supabaseUrl, supabaseKey)
 
-async function addAthlete(athlete_id) {
+async function addAthlete() {
     const container = document.getElementById('athlete_container');
     const {data} = await supabase
         .from('athlete')
         .select('*')
-        .eq('id', athlete_id);
+        .order('id', { ascending: true });
 
-    if (data.length === 0) return;
-    const athlete = data[0];
+    data.forEach(athlete => {
     const imgUrl = athlete.profileImg.replace(/\s/g, '');
 
     const figure = document.createElement('figure');
+    figure.style.cursor = 'pointer';
+    figure.classList.add('athlete_card');
     const img = document.createElement('img');
     const figcaption = document.createElement('figcaption');
    
     img.src = imgUrl;
-    figcaption.innerHTML = `${athlete.name}<br>${athlete.sport}<br>${athlete.class}`
+    figcaption.innerHTML = `${athlete.name}<br>${athlete.sport}<br>${athlete.class}<br>`
     figure.appendChild(img);
     figure.appendChild(figcaption);
     container.appendChild(figure);
+
+    figure.addEventListener('click', () => {
+        document.getElementById('athlete_image').src = imgUrl;
+        document.getElementById('athlete_name').innerHTML = `<strong>${athlete.name || ''}</strong>`;
+        document.getElementById('athlete_school').textContent = `School: ${athlete.school || 'N/A'}`;
+        document.getElementById('athlete_weight').textContent = `Weight: ${athlete.weight || 'N/A'}`;
+        document.getElementById('athlete_class').textContent = `Class: ${athlete.class || 'N/A'}`;
+        document.getElementById('athlete_height').textContent = `Height: ${athlete.height || 'N/A'}`;
+        document.getElementById('athlete_interests').textContent = `Interests: ${athlete.interests || 'N/A'}`;
+        document.getElementById('athlete_sport').textContent = `Sport: ${athlete.sport || 'N/A'}`;
+        document.getElementById('athlete_socials').textContent = `Social: ${athlete.socialMedia || 'N/A'}`;
+        document.getElementById('athlete_stats').innerHTML = `Stats:<br>${addNewLine(athlete.stats)}`;
+        document.getElementById('athlete_summary').innerHTML = `Summary:<br>${addNewLine(athlete.summary)}`;        
+        document.getElementById('athlete_pop_up').style.display = 'flex';
+        document.body.classList.add('athlete_open');
+    });
+});
 }
+function addNewLine(text) {
+    if (!text) return '';
+    return text.replace(/\n/g, '<br><br>');
+}
+
   
 document.addEventListener('DOMContentLoaded', () => {
-    for(let i = 30; i < 50; i++){
-        addAthlete(i)
-    }
+    if (document.getElementById('athlete_container')) {
+        addAthlete();
+    
+    document.getElementById('close_athlete').addEventListener('click', () => {
+        document.getElementById('athlete_pop_up').style.display = 'none';
+        document.body.classList.remove('athlete_open');
+    });
 
+    document.getElementById('athlete_pop_up').addEventListener('click', (clck) => {
+        if (clck.target === clck.currentTarget) {
+            document.getElementById('athlete_pop_up').style.display = 'none';
+            document.body.classList.remove('athlete_open');
+        }
+    });
+}
     const menu = document.querySelector('.mobile-menu');
     const menuLinks = document.querySelector('.hovercolor');
     if (menu && menuLinks) {
