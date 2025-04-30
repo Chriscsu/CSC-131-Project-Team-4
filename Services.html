@@ -59,6 +59,14 @@
         .sub_item:hover {
             transform: translateY(-4px);
         }
+        .title{
+            display: inline-flex;
+            width: 100%;
+            height: 400px;
+            max-width: 1600px;
+            align-self: center;
+            padding: 20px 45px;
+        }
         .Preface{
             padding-left: 50px; padding-right: 50px;
             text-align: center;
@@ -87,9 +95,6 @@
         .subheader{
             color: white;
             margin-bottom: 5px;
-        }
-        .sub_item{
-            max-width: 650px;
         }
         .contact{
             color: black;
@@ -128,8 +133,39 @@
             </div>
         </nav>
 </header>
-<main class="Services">    
-    <h2>Services</h2>
+<main class="main">    
+    <!----------------------------------------------------------------------------------------------------------------------->
+    <div id="main_intro_container">  <!--Introduction Section -->
+        <div id="main_intro_text">              <!--Text Container-->
+            <h1>&ensp;Welcome to <br>Players Club Management</h1>
+            <p>
+                <i>Unlock your full potential in the NIL space with a team that puts athletes first. 
+                Whether you're a student-athlete looking to maximize your brand or a business searching for top-tier athlete partnerships, 
+                we're hereto connect you to the right opportunities.</i>
+            </p>
+            <div class="home_intro_buttons_container">
+                <a href="./athletes.html">
+                    <button>Athletes</button>
+                </a>
+                <a href="./index.html">
+                    <button>Brands</button>
+                </a>
+            </div>
+        </div> 
+        <div id="main_intro_image">          <!--Image Container-->
+            <img src="./images/atheleteImgBackgroundRemoved.png" alt="" width="90%" height="auto">
+        </div>
+    </div>
+    <!----------------------------------------------------------------------------------------------------------------------->
+    <div class="title">
+        <div>
+            <h2>Our Services</h2>
+        </div>
+        <div>
+            <img src="./images/ServicePlayer1.png" alt="" width="55%" height="auto">
+        </div>
+    </div>
+    <!----------------------------------------------------------------------------------------------------------------------->
     <h3 class="Preface">
         At Players Club Management, we offer a range of services designed to help student-athletes maximize their Name, Image, and Likeness (NIL)
         opportunities. Our expertise ensures athletes get the best possible deals while building a sustainable personal brand.
