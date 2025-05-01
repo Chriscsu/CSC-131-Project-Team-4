@@ -29,6 +29,11 @@
 
 }
 
+.athletePage h2 {
+    color:#000;
+    text-align: left;
+}
+
 h2, h3{
     text-shadow: 1px 1px 2px rgba(0,0,0,0.6)
 }
@@ -378,10 +383,46 @@ header {
     display: inline-flex;
     /*border: 1px solid green;*/
     width: 100%;
-    height: 400px;
+    height: 475px;
     max-width: 1600px;
     align-self: center;
     background-color: #FEFBEA;
+}
+
+.athletePage #main_intro_container {
+    padding: 0 10%;
+}
+
+.prev, .next {
+    color: #FEFBEA;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.next {
+    right: 2%;
+}
+
+.next:hover {
+    right: 1.5%;
+}
+
+.prev {
+    left: 2%;
+}
+
+.prev:hover {
+    left: 1.5%;
 }
 
 #main_intro_text {
@@ -393,6 +434,19 @@ header {
     padding: 20px 45px;
 }
 
+.athletePage #main_intro_text {
+    line-height: 35px;
+}
+
+.athletePage #main_intro_text h2 {
+    font-size: 2em;
+    line-height: 35px;
+}
+
+.athletePage #main_intro_text li {
+    font-size: 1.2em;
+}
+
 #main_intro_image {
     display: flex;
     justify-content: center;
@@ -401,11 +455,10 @@ header {
     width: 40%;
 }
 
-.main_intro_image_placeholder {
-    height: 300px;
-    width: 300px;
-    border: 1px solid black;
-    background-color: lightgray;
+
+#main_intro_image img {
+    max-height: 475px;
+    width: auto;
 }
 
                                             /*------Main Section - Content-----*/
@@ -494,8 +547,8 @@ header {
 
 .main button {
     padding: 10px;
-    border: 1.5px solid #000;
-    border-radius: 2px;
+    border: 2px solid #000;
+    border-radius: 10%;
     text-decoration: none;
     font-family: var(--secondary-font);
     font-size: 16px;
@@ -510,18 +563,19 @@ header {
 }
 
 .main button:active {
-    color: blue;
+    border-width: 1.5px;
 }
 
 #main_intro_text button{
     left: -10%;
-    background-color: #bcbcbc;
+    background-color: #000;
     border-color: #000;
+    color: #ffffff;
 }
 
 #main_intro_text button:hover {
-    background-color: #000;
-    color: #FEFBEA;
+    background-color: var(--hover-color);
+    color: #000;
 
 }
 
@@ -633,6 +687,11 @@ header {
         width: 90%;
         justify-self: center;
         margin-bottom: 20px;
+    }
+
+                                    /*--Athlete Intro Banner --*/
+    .prev, .next {
+        visibility: hidden;
     }
 
 }
