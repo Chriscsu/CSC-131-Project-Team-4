@@ -23,7 +23,7 @@
     font-family: var(--primary-font);
     font-weight: 600;
     font-size: 30px;
-    color: #FEFBEA;
+    color: white;
     text-align: center;
     margin: 0px;
 
@@ -109,29 +109,22 @@ header {
 }
 
 .navbar li a {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 22px;
     color: var(--primary-color);
     text-decoration: none;
-    padding: 15px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     display: inline-block;
     transition: all 0.3s ease 0s;
 }
 
 .nav_item_btn {
-    /*text*/
-    text-decoration: underline !important;
-    font-weight: bold!important;
     color: black!important;
-    font-size: 25px!important;
-
-    /*button and background*/
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #FEFBEA !important; 
-    
-    border: 3.5px solid orange!important; 
-    border-radius: 30px 30px; /* Rounded corners */
+    background-color: white !important; 
+    border-radius: 15px 15px; /* Rounded corners */
     transition: all 0.3s ease; /* Smooth effect */   
 }
 
@@ -378,12 +371,13 @@ header {
     display: inline-flex;
     /*border: 1px solid green;*/
     width: 100%;
-    height: 400px;
+    height: fit-content;
+    padding-top: 150px;
+    padding-bottom: 150px;
     max-width: 1600px;
     align-self: center;
     background-color: #FEFBEA;
 }
-
 #main_intro_text {
     display: flex;
     flex-direction: column;
@@ -391,6 +385,15 @@ header {
     /*border: 1px solid purple;*/
     width: 60%;
     padding: 20px 45px;
+}
+#main_intro_text h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: rgb(34, 34, 34);
+    text-align: left;
+    word-break: break-word;
 }
 
 #main_intro_image {
@@ -410,6 +413,7 @@ header {
 
                                             /*------Main Section - Content-----*/
 #main_content_container {
+    padding-top: 80px;
     width: 100%;
     /*border: 1px solid blue;*/
     background-color: #000;
@@ -427,14 +431,30 @@ header {
 
 .main_row_one {
     flex-direction: row;
-    max-width: 1800px;
+    max-width: fit-content;
+    width: 100%;
     justify-self: center;
 }
 
 .main_row_two {
     flex-direction: row-reverse;
-    max-width: 1800px;
+    max-width:fit-content;
     justify-self: center;
+    padding-top: 80px;
+    width: 100%;
+    /*border: 1px solid blue;*/
+    background-color: #000;
+}
+
+.get_started {
+    display: flex;               /* Make it a flex container */
+    flex-direction: column;      /* Stack children vertically */
+    align-items: center;         /* Center content horizontally */
+    width: 100%;
+    flex-direction: column;
+    max-width: 1800px;
+    margin: 0 auto;              /* Horizontally center the section itself */
+    padding: 60px 20px;          /* Optional: add some spacing */
 }
 
 .main_row_one p, .main_row_two p {
@@ -490,41 +510,48 @@ header {
 
 .home_intro_buttons_container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     width: 100%;
 }
-
-.main button {
-    padding: 10px;
-    border: 1.5px solid #000;
-    border-radius: 2px;
-    text-decoration: none;
-    font-family: var(--secondary-font);
-    font-size: 16px;
-    font-weight: 500;
-    margin: 20px 25px 0px 25px;
-    position: relative;
-    
+.btn_1 {
+    background-color: white;
+    align-items: end;
+    color: #000;
+    border-radius: 25px;
+    font-weight: 400;
+    font-size: large;
+    padding: 12px 20px;
 }
+
+/* .main button {
+    background-color: white;
+    color: #000;
+    border-radius: 25px;
+    font-weight: 400;
+    font-size: large;
+    padding: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+} */
 
 .main button:hover {
     cursor: pointer;
 }
 
-.main button:active {
-    color: blue;
-}
 
 #main_intro_text button{
-    left: -10%;
-    background-color: #bcbcbc;
-    border-color: #000;
+    margin-left:20px;
+    background-color: black ;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 15px;
 }
 
 #main_intro_text button:hover {
-    background-color: #000;
-    color: #FEFBEA;
-
+    background-color: white;
+    border: 2px solid #000;
+    color:black;
+    border-color: black;
 }
 
 .button_container {
@@ -534,22 +561,28 @@ header {
 }
 
 .button_container button {
-    background-color: #FEFBEA;
+    background-color: white;
+    font-weight: 450;
     color: #000;
-    border: 2px solid #000;
-    border-radius: 5px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    font-size: 20px;
+    padding: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin: 25px;
 }
 
 .button_container button:hover {
     background-color: #000;
+    border: 2px solid #000;
     color: #fefbeaf0;
     border-color: #fefbeaf0;
     
 }
 
 .button_container .contact_button  {
-    background-color: #FEFBEA;
+    background-color: white;
     color: #000;
     border: 6px solid orange;
     border-radius: 5px;
@@ -569,7 +602,7 @@ header {
 }
 
 #home_feature_featuredAthletes figcaption {
-    color: #FEFBEA;
+    color: white;
     font-family: var(--secondary-font);
     text-align: center;
 }
@@ -577,7 +610,7 @@ header {
 
 .main aside {         /*Testimonial quotes*/
     font-style: italic;
-    color: #FEFBEA;
+    color: white;
     width: 25%;
 }
 .athlete_card {
