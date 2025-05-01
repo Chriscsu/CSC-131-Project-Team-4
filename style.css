@@ -923,6 +923,7 @@ header {
     align-items: center;
     text-align: center;
     padding-bottom: 5%;
+    padding-left: 2%
 }
 .column-2 {
     display:flex;
@@ -961,8 +962,8 @@ header {
     .column-2 {
         align-items: center;
         width: 100%;
-        padding: auto;
-        margin: 0 auto;
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
     }
     .column-3 {
         display:flex;
