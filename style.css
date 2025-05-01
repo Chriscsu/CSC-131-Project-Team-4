@@ -125,6 +125,19 @@ header {
     transition: all 0.3s ease 0s;
 }
 
+.right_arrow{
+    cursor: pointer;
+}
+.right_arrow:hover{
+    color: #b88a4f;
+}
+.left_arrow{
+    cursor: pointer;
+}
+.left_arrow:hover{
+    color: #b88a4f;
+}
+
 .nav_item_btn {
     color: black!important;
     display: inline-block;
