@@ -969,6 +969,7 @@ header {
 /* CONTACT SECION*/
 .contact_flex-container {
     display: flex; 
+    flex-direction: column
     background-color: #FEFBEA;
     padding-top:1%;
     gap: 2rem;
