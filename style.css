@@ -1387,6 +1387,7 @@ body.athlete_open {
     border-radius: 30px;
     max-width: 1400px;
     width: 100%;
+    color: black;
     text-align: left;
     margin-bottom: 20px;
 }
