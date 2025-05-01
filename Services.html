@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
+    <script type = "module" src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/481272558b.js" crossorigin="anonymous"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/logo/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/logo/favicon-32x32.png">
@@ -19,39 +19,110 @@
     <style>
         main{background-color: #FEFBEA;}
         h2{
-            text-align: center;
-            font-weight: bold;
-            font-size: 96px;
+            color: black; font-size: 96px;
         }
         h3{
             font-size: 24px;
+            color: black;
         }
         .MainContainer{
             display: flex;
             flex-flow: column nowrap;
             background-color: black;
             padding-bottom: 40px;
+            padding-top: 40px;
             gap: 20px;
+            width: 100%;
         }
         .subcontainer{
             display: flex;
-            flex-flow: row nowrap;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
             align-self: center;
             padding-top: 15px; padding-left: 40px; padding-right: 40px;
             gap: 50px;
             justify-items: right;
+            max-width: 1450px;
+            width: 100%;
+        }
+        .sub_item {
+            max-width: 650px;
+            flex: 1 1 300px;
+            box-sizing: border-box;
+            border: 2px solid #FEFBEA;
+            padding: 20px;
+            border-radius: 16px;
+            transition: transform 0.2s ease;
+        }
+        .sub_item:hover {
+            transform: translateY(-4px);
+        }
+        .title{
+            display: grid;
+            align-items: center; 
+            grid-template-columns: 1fr 1fr;
+            column-gap: 5px;
+            max-width: 1600px;
+            margin: 0 auto;
+            padding-bottom: 50px;
         }
         .Preface{
             padding-left: 50px; padding-right: 50px;
             text-align: center;
+            max-width: 1600px;
+            width: 100%;
+            justify-self: center;
         }
+        @media screen and (max-width: 1000px) {
+            .Preface{
+                font-size: 20px;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            
+            .Preface{
+                font-size: 13px;
+            }
+            .title{
+                display: grid;
+                align-items: center;
+                justify-items: center;
+                grid-template-columns: 1fr;
+                column-gap: 5px;
+                font-size: 23px;
+                padding-bottom: 50px;
+            }
+            .serv_img{
+                max-width: 420px;
+            }
+        }
+        .get_started{
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .connect_button{
+            background-color: #d1a95f;
+            color: #FEFBEA;
+            padding-top: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        .connect_button:hover {
+            background-color: #b88a4f;
+        }   
         .subheader{
-        color: white;
+            color: white;
+            margin-bottom: 5px;
         }
         .contact{
             color: black;
             text-align: center;
-            padding-bottom: 25px;
+            padding-bottom: 15px;
         }
         .text{
         color: white;
@@ -84,17 +155,25 @@
                 </ul>
             </div>
         </nav>
-</header>
-<main class="Services">    
-    <h2>Services</h2>
-    <h3 class="Preface">
-        At Players Club Management, we offer a range of services designed to help student-athletes maximize their Name, Image, and Likeness (NIL)
-        opportunities. Our expertise ensures athletes get the best possible deals while building a sustainable personal brand.
-    </h3>
-    <br>
+    </header>
+</body>
+<main class="main">    
+    <div class="title">
+        <div>
+            <h2 style="color: black;">Our Services</h2>
+            <h3 class="Preface">
+                At Players Club Management, we offer a range of services designed to help student-athletes maximize their Name, Image, and Likeness (NIL)
+                opportunities. Our expertise ensures athletes get the best possible deals while building a sustainable personal brand.
+            </h3>
+        </div>
+        <div class = "serv_img">
+            <img src="./images/ServicePlayer1.png" alt=""  style= "max-width: 100%; max-height: 100%;">
+        </div>
+    </div>
+    <!----------------------------------------------------------------------------------------------------------------------->
     <div class="MainContainer">
         <div class="subcontainer">
-            <div >
+            <div class="sub_item">
                 <h3 class="subheader">
                 NIL Deal Negotiation
                 </h3>
@@ -103,7 +182,7 @@
                     each contract aligns with the athlete's goals and long-term success.
                 </p>
             </div>
-            <div>
+            <div class="sub_item">
                 <h3 class="subheader">
                 Sponsorship & Endorsement Opportunities
                 </h3>
@@ -114,7 +193,7 @@
             </div>
         </div>
         <div class="subcontainer">
-            <div>
+            <div class="sub_item">
                 <h3 class="subheader">
                     Social Media Growth & Monetization
                 </h3>
@@ -123,7 +202,7 @@
                         engagement optimization, we ensure athletes maximize their digital impact.
                     </p>
             </div>
-            <div>
+            <div  class="sub_item">
                 <h3 class="subheader">
                 Personal Branding & Marketing Strategy
                 </h3>    
@@ -134,7 +213,7 @@
             </div>
         </div>
         <div class="subcontainer">
-            <div>
+            <div  class="sub_item">
                 <h3 class="subheader">
                     Financial Literacy & Contract Review
                 </h3>
@@ -144,7 +223,7 @@
                     workshops to educate athletes about NIL opportunities, contract reviews, and financial management.
                 </p>
             </div>
-            <div>
+            <div  class="sub_item">
                 <h3 class="subheader">
                     Business & Entrepreneurship Guidance
                 </h3>
@@ -155,11 +234,16 @@
             </div>
         </div>
     </div>
-    <h3 class="Preface">Get Started Today</h3>
-    <p class="contact">
-    Ready to take your NIL journey to the next level? Contact us today and let’s build your brand together!
-    <br>Get in Touch
-    </p>
+    <div class="get_started">
+        <h3 class="Preface">Get Started Today</h3>
+        <p class="contact">
+        Ready to take your NIL journey to the next level? Contact us today and let’s build your brand together!
+        <br>
+        </p>
+        <a href="Contact.html">
+            <button class="connect_button" style="color: black"> Get in Touch</button>
+        </a>
+    </div>
 </main>
 <footer class="footer">
     <section class="footer_cont">
