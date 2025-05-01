@@ -376,8 +376,8 @@ header {
     display: inline-flex;
     /*border: 1px solid green;*/
     width: 100%;
-    padding-top: 125px;
-    padding-bottom: 125px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     max-width: 1600px;
     align-self: center;
     background-color: #FEFBEA;
