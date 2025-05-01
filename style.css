@@ -376,12 +376,37 @@ header {
     display: inline-flex;
     /*border: 1px solid green;*/
     width: 100%;
-    height: 475px;
+    padding-top: 125px;
+    padding-bottom: 125px;
     max-width: 1600px;
     align-self: center;
     background-color: #FEFBEA;
 }
-
+#main_intro_text h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: rgb(34, 34, 34);
+    text-align: left;
+    word-break: break-word;
+}
+#main_intro_text button{
+    margin-left:20px;
+    background-color: black ;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: large;
+}
+#main_intro_text button:hover{
+    margin-left:20px;
+    background-color: white ;
+    color: black;
+    border: 2px solid black;
+}
 .athletePage #main_intro_container {
     padding: 0 10%;
 }
@@ -498,14 +523,23 @@ header {
 }
 
 .get_started {
-    display: flex;               /* Make it a flex container */
-    flex-direction: column;      /* Stack children vertically */
-    align-items: center;         /* Center content horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     flex-direction: column;
     max-width: 1800px;
-    margin: 0 auto;              /* Horizontally center the section itself */
-    padding: 60px 20px;          /* Optional: add some spacing */
+    margin: 0 auto;
+    padding: 60px 20px;   
+}
+.btn_1 {
+    background-color: white;
+    align-items: end;
+    color: #000;
+    border-radius: 25px;
+    font-weight: 400;
+    font-size: large;
+    padding: 12px 20px;
 }
 
 .main_row_one p, .main_row_two p {
@@ -586,15 +620,10 @@ header {
     color: blue;
 }
 
-#main_intro_text button{
-    left: -10%;
-    background-color: #bcbcbc;
-    border-color: #000;
-}
-
-#main_intro_text button:hover {
-    background-color: #000;
-    color: #FEFBEA;
+hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
 
 }
 
@@ -1008,9 +1037,6 @@ body.athlete_open {
     border-radius: 16px;
 }
 
-.team_member:hover {
-    
-}
 
 .team_name {
     font-size: 20px;
