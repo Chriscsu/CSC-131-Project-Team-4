@@ -17,20 +17,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/logo/favicon-16x16.png">
     <link rel="manifest" href="/logo/site.webmanifest">
     <style>
-        @media only screen and (max-width: 600px) {
-            
-            .Preface{
-                font-size: 13px;
-            }
-            .title{
-                display: grid;
-                align-items: center; 
-                grid-template-columns: 1fr;
-                column-gap: 5px;
-                font-size: 23px;
-                padding-bottom: 50px;
-            }
-        }
         main{background-color: #FEFBEA;}
         h2{
             color: black; font-size: 96px;
@@ -76,6 +62,8 @@
             align-items: center; 
             grid-template-columns: 1fr 1fr;
             column-gap: 5px;
+            max-width: 1600px;
+            margin: 0 auto;
             padding-bottom: 50px;
         }
         .Preface{
@@ -84,6 +72,29 @@
             max-width: 1600px;
             width: 100%;
             justify-self: center;
+        }
+        @media screen and (max-width: 1000px) {
+            .Preface{
+                font-size: 20px;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            
+            .Preface{
+                font-size: 13px;
+            }
+            .title{
+                display: grid;
+                align-items: center;
+                justify-items: center;
+                grid-template-columns: 1fr;
+                column-gap: 5px;
+                font-size: 23px;
+                padding-bottom: 50px;
+            }
+            .serv_img{
+                max-width: 420px;
+            }
         }
         .get_started{
             padding: 20px;
@@ -154,8 +165,8 @@
                 opportunities. Our expertise ensures athletes get the best possible deals while building a sustainable personal brand.
             </h3>
         </div>
-        <div>
-            <img src="./images/ServicePlayer1.png"; alt=""; max-width: 100%; max-height: 100%;>
+        <div class = "serv_img">
+            <img src="./images/ServicePlayer1.png" alt=""  style= "max-width: 100%; max-height: 100%;">
         </div>
     </div>
     <!----------------------------------------------------------------------------------------------------------------------->
