@@ -1120,7 +1120,8 @@ body.athlete_open {
 
 .about_connect_section {
     margin-top: 20px;
-    padding: 10px 40px 25px 40px;
+    margin-bottom: 43px;
+    padding: 10px 40px 25px 0px;
     background-color: #FEFBEA;
     color: #000;
 }
