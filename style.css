@@ -1509,6 +1509,23 @@ body.athlete_open {
     transition: color 0.2s ease;
 }
 
+.tos_section .a_blue {
+    color: blue;
+    text-decoration: none;
+}
+
+.tos_section table {
+    width: 50%;
+    border-collapse: separate;
+    border-spacing: 8px;
+  }
+  
+  .tos_section th, .tos_section td {
+    padding: 0px;
+    text-align: left;
+  }
+
+  
 .tos_section a:hover {
     text-decoration: underline;
     color: rgb(117, 117, 248);
@@ -1520,7 +1537,9 @@ body.athlete_open {
     height: auto;
     padding: 20px 0;
 }
- 
+.tos_section table {
+    width: 80%;
+  }
 .tos_intro_text {
     width: 100%;
     padding: 20px;

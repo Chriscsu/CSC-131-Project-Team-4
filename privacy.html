@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players Club Management</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm" type="module"></script>
+    <script type = "module" src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/481272558b.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/logo/favicon-16x16.png">
+    <link rel="manifest" href="/logo/site.webmanifest">
+</head>
+<body id="about_body" style="background: linear-gradient(rgba(10, 10, 10, .8) 40%, rgb(34, 34, 34) 90%);">
+    <header >
+        <nav class="navbar">
+            <div class="navbar_cont">
+                <div class="nav_left">
+                <a href="index.html" id="Logo">
+                    <img src="logo/logo.png" alt="Logo">
+                </a>
+                <div id="header_title">
+                    <span>Players Club Management</span>
+                </div>
+                </div>
+                <div class="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="hovercolor">
+                        <li class="nav_item"> <a href="index.html" class="nav_link"> Home</a> </li>
+                        <li class="nav_item"> <a href="athletes.html" class="nav_link"> Athletes</a> </li>
+                        <li class="nav_item"> <a href="about.html" class="nav_link"> About us</a> </li>
+                        <li class="nav_item"> <a href="Services.html" class="nav_link"> Services</a> </li>
+                        <li class="nav_item"> <a href="Contact.html" class="nav_item_btn nav_link"> Contact Us</a> </li>
+                </ul>
+            </div>
+        </nav>
+</header>
+<main class="terms_of_service">
+    <section class="tos_container">
+      <div class="tos_intro_container">
+        <div class="tos_intro_text">
+          <h1>Players Club Management<br>Privacy Policy</h1>
+          <p><i>This Privacy Policy explains how Players Club Management (“we”, “us”, or “our”) collects, uses,
+            and discloses your Personal Information when you visit or make a purchase from our website
+            (the “Site”).</i>
+          </p>
+        </div>
+        <div class="tos_intro_image">
+          <img src="./images/atheleteImgBackgroundRemoved.png" alt="Players Club Management" width="90%" height="auto">
+        </div>
+      </div>
+      <section class="tos_gray_wrapper">
+      <div class="tos_section">
+        <h3>Collecting Personal Information</h3>
+        <p>When you visit our Site, we collect certain information about your device, your interactions
+            with the Site, and data needed to process purchases or provide our services. We may also
+            collect additional information if you contact us directly. “Personal Information” refers to any
+            information that can uniquely identify you. Below are the types of Personal Information we
+            collect and why:
+            </p>
+    </div>
+      <div class="tos_section">
+        <h3>Device Information</h3>
+        <p><strong>Examples of data collected: </strong>browser type, IP address, time zone, cookie data, pages/products
+            viewed, search terms, and site interaction behavior.
+            <br>
+        <strong>Purpose: </strong>to display our Site properly, and for analytics to improve user experience.
+            <br>
+        <strong>How we collect it: </strong>automatically, using cookies, log files, pixels, tags, or other tracking
+        technologies.
+            <br>
+        <strong>Disclosure: </strong> shared with our analytics and hosting service providers (e.g., Google Analytics,
+        Shopify, or other platforms we use).</p>
+      </div>
+      <div class="tos_section">
+        <h3>Order & Service Information</h3>
+        <p><strong>Examples of data collected: </strong>name, billing/shipping address, payment details (credit card, Apple
+            Pay, etc.), email address, and phone number.
+            <br>
+        <strong>Purpose: </strong>to fulfill contracts, process payments, arrange services or product delivery, send
+            confirmations, and communicate with you.
+            <br>
+        <strong>How we collect it: </strong>directly from you when you fill out a form, make a purchase, or book a
+            service.
+            <br>
+        <strong>Disclosure: </strong> shared with payment processors, CRM tools, email marketing platforms, or other
+            vendors necessary to deliver our services.</p>
+      </div>
+      <div class="tos_section">
+        <h3>Customer Support</h3>
+        <p><strong>Examples of data collected: </strong>any personal details you share while requesting support (e.g.,
+            contact details, case details).
+            <br>
+        <strong>Purpose: </strong>to help resolve your issues and provide better service.
+            <br>
+        <strong>How we collect it: </strong>directly from you.
+            <br>
+        <strong>Disclosure: </strong>may be shared with third-party support platforms we use.</p>
+      </div>
+      <div class="tos_section">
+        <h3>Minors</h3>
+        <p>Our services are not intended for individuals under the age of 13. We do not knowingly collect
+            Personal Information from children. If you are a parent or guardian and believe your child has
+            provided us with personal data, please contact us to have it removed.</p>
+      </div>
+      <div class="tos_section">
+        <h3>Sharing Your Information</h3>
+        <p>We may share your Personal Information with third-party service providers who assist us in
+            running our business, fulfilling our obligations to you, and marketing our services. For example:</p>
+        <ul>
+          <li>We may use Shopify (or another platform) to host and manage our e-commerce
+            features</li>
+          <li>TWe may share data to comply with legal requirements or to enforce our rights.</li>
+        </ul>
+        </p>
+      </div>
+      <div class="tos_section">
+        <h3>Behavioural Advertising</h3>
+        <p>We may use your Personal Information to show you relevant ads or marketing. This may
+            include sharing data with:</p>
+        <ul>
+            <li>Google Analytics – <a href="https://policies.google.com/privacy" class = "a_blue">Learn more</a> or <a href="https://tools.google.com/dlpage/gaoptout" class = "a_blue">opt-out</a></li>
+            <li>Social media platforms like Facebook and Instagram for remarketing purposes</li>
+        </ul>
+        <p>To opt-out of targeted advertising, you can use the following links:</p>
+        <ul>
+            <li><a href="https://www.facebook.com/settings/?tab=ads" class = "a_blue">Facebook</a></li>
+            <li><a href="https://www.google.com/settings/ads/anonymous" class = "a_blue">Google</a></li>
+            <li><a href="https://advertise.bingads.microsoft.com/en-us/resources/policies/personalized-ads" class = "a_blue">Bing</a></li>
+            <li>Or visit the <a href="http://optout.aboutads.info/" class = "a_blue">Digital Advertising Alliance opt-out page</a></li>
+          </ul>
+      </div>
+      <div class="tos_section">
+        <h3>Using Personal Information</h3>
+        <p>We use your Personal Information to:</p>
+        <ul>
+          <li>Offer and deliver our services (e.g., athlete representation, merchandise, digital
+            content)</li>
+          <li>Communicate with you</li>
+          <li>Provide updates and marketing communications</li>
+          <li>Comply with legal obligations</li>
+        </ul>
+      </div>
+      <div class="tos_section">
+        <h3>GDPR Compliance (If Applicable)</h3>
+        <p>If you are located in the European Economic Area (EEA), we process your Personal Information
+            based on:</p>
+        <ul>
+          <li>Your consent</li>
+          <li>Performance of a contract</li>
+          <li>Legal compliance</li>
+          <li>Our legitimate interests (provided they do not override your rights)</li>
+        </ul>
+      </div>
+      <div class="tos_section">
+        <h3>Retention</h3>
+        <p>We retain your information as long as necessary to fulfill our services and legal obligations. You
+            may request deletion of your data at any time.</p>
+      </div>
+      <div class="tos_section">
+        <h3>Automated Decision-Making</h3>
+        <p>We do <strong>not</strong> engage in fully automated decision-making that has a legal or significant effect on
+            users.</p>
+      </div>
+      <div class="tos_section">
+        <h3>Information We Collect</h3>
+        <p><strong>Device Information</strong></p>
+        <p>&emsp;- <strong>Examples of data collected:</strong> browser type, IP address, time zone, cookie data, pages viewed, search queries, and interactions with the Site.<br>
+            &emsp;- <strong>Purpose:</strong> to improve site performance, understand user behavior, and deliver a better experience.<br>
+            &emsp;- <strong>How we collect it:</strong> automatically via cookies, log files, and similar technologies.<br>
+            &emsp;- <strong>Disclosure:</strong> may be shared with analytics tools and website hosting providers.</p>
+        <p><strong>Order Information</strong></p>
+        <p>&emsp;- <strong>Examples of data collected:</strong> your name, billing/shipping address, email, phone number, payment details (e.g., credit card or other accepted methods).<br>
+            &emsp;- <strong>Purpose:</strong> to process orders, fulfill contracts, send confirmations, provide customer service, and screen for potential fraud.<br>
+            &emsp;- <strong>How we collect it:</strong> directly from you during checkout or other interactions.<br>
+            &emsp;- <strong>Who we share it with:</strong> payment processors, shipping partners, and our e-commerce platform.</p> 
+        <p><strong>Customer Support Information</strong></p>
+        <p>&emsp;- <strong>Examples of data collected:</strong> any information you provide when reaching out for support.<br>
+            &emsp;- <strong>Purpose:</strong> to resolve your issues or respond to inquiries.<br>
+            &emsp;- <strong>How we collect it:</strong> directly from you.<br>
+            &emsp;- <strong>Who we share it with:</strong> support ticketing platforms or contractors assisting with customer service.</p>          
+      </div>
+      <div class="tos_section">
+        <h3>Sharing Personal Information</h3>
+        <p>We may share your personal information with third parties that help us operate the Site, fulfill
+            orders, or analyze performance. These include payment providers, shipping carriers, email
+            platforms, and advertising networks..</p>
+        <p>We may also disclose information to comply with legal obligations, protect rights, or respond to
+            law enforcement.</p>
+      </div>
+      <div class="tos_section">
+        <h3>Behavioral Advertising</h3>
+        <p>We may use your information to serve personalized ads or marketing messages based on your
+            interactions with the Site.</p>
+        <p><strong>Examples:</strong></p>
+        <ul>
+            <li>We may use Google Analytics or similar tools to monitor usage.</li>
+            <li>We may share details with advertising partners (e.g., Meta, Google) to show relevant
+                ads.</li>
+        </ul>
+        <p><strong>To opt out of targeted advertising</strong></p>
+        <ul>
+            <li>Facebook: <a href="https://www.facebook.com/settings/?tab=ads" class = "a_blue">https://www.facebook.com/settings/?tab=ads</a></li>
+            <li>Google <a href="https://www.google.com/settings/ads/anonymous" class = "a_blue">https://www.google.com/settings/ads/anonymous</a></li>
+            <li>General: <a href="http://optout.aboutads.info/" class = "a_blue">http://optout.aboutads.info/</a></li>
+        </ul>
+      </div>
+      <div class="tos_section">
+        <h3>Using Your Information</h3>
+        <p>We use your information to:</p>
+        <ul>
+            <li>Offer and deliver products or services</li>
+            <li>Process payments and send receipts</li>
+            <li>Fulfill orders and arrange shipping</li>
+            <li>Communicate updates or promotions</li>
+            <li>Improve and secure our services</li>
+        </ul>
+      </div>
+      <div class="tos_section">
+        <h3>Your Rights</h3>
+        <p><strong>CCPA (if applicable)</strong></p>
+        <p>California residents may:</p>
+        <ul>
+            <li>Request access to the personal data we hold</li>
+            <li>Ask for corrections or deletion</li>
+            <li>Opt out of the sale of personal data</li>
+            <li>Designate an authorized agent to act on their behalf</li>
+        </ul>
+        <p>We do not sell personal data in the conventional sense, but we may share it with third parties
+            as described.</p>
+      </div>
+      <div class="tos_section">
+        <h3>Cookies</h3>
+        <p>We use cookies to support site functionality, track visitor behavior, and enhance your experience. These may include:</p>
+        <table>
+          <thead><tr>
+              <th>Cookie Name</th>
+              <th>Purpose</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>_session_id</td><td>Maintains session data</td></tr>
+            <tr><td>cart</td><td>Tracks shopping cart contents</td></tr>
+            <tr><td>_analytics</td><td>Website usage analysis</td></tr>
+            <tr><td>_marketing_pref</td><td>Stores your ad tracking choice</td></tr>
+          </tbody>
+        </table>
+        <p>You can manage cookies through your browser settings. Learn more at <a href="http://www.allaboutcookies.org" class="a_blue">www.allaboutcookies.org</a>.</p>
+      </div>
+      <div class="tos_section">
+        <h3>Do Not Track</h3>
+        <p>We do not currently respond to "Do Not Track" signals due to a lack of industry standards.</p>
+      </div>
+      <div class="tos_section">
+        <h3>Changes to This Policy</h3>
+        <p>We may revise this Privacy Policy periodically to reflect operational, legal, or regulatory
+            updates. The latest version will always be available on our Site.</p>
+      </div>
+      <div class="tos_section">
+        <h3>Contact Us</h3>
+        <p>For any privacy-related questions, requests, or complaints, please contact:</p>
+        <p><strong>Players Club Management</strong><br>Email: <a href="mailto:playersclubmgmtsjz@gmail.com">playersclubmgmtsjz@gmail.com</a><br>Address: 17325 Wabash Ave
+        </p>
+      </div>
+    </section>
+    </section>
+  </main>
+<footer class="footer">
+    <section class="footer_cont">
+        <div class="footer_pcm">
+            <a href="index.html" class="footer_logo">
+                <img src="/logo/logo.png" alt="logo" class="footer_logo_img">
+                <span class="footer_logo_name">Players Club Management</span>
+            </a>
+            <p>Santiago Zuniga, Founder & CEO</p>
+            <p>Email: <a href="mailto:playersclubmgmtsjz@gmail.com">playersclubmgmtsjz@gmail.com</a></p>
+            <p>Phone: 909-232-2422</p>
+        </div>
+        <div class="footer_main">
+            <p>Main Menu</p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="athletes.html">Athletes</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+                <li><a href="Services.html">Services</a></li>
+            </ul>
+        </div>
+        <div class="footer_additional">
+            <p>Additional Information</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="Terms_Of_Service.html">Terms of Service</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+            </ul>
+        </div>
+        <div class="footer_social">
+            <p>Follow Us</p>
+            <a href="https://www.instagram.com/playersclubmgmt" target="_blank" class="instagram_icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </section>
+</footer>
+</body>
+</html>
