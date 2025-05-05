@@ -389,8 +389,8 @@ header {
     display: inline-flex;
     /*border: 1px solid green;*/
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 150px;
+    padding-bottom: 150px;
     max-width: 1600px;
     align-self: center;
     background-color: #FEFBEA;
@@ -400,6 +400,14 @@ header {
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
+    color: rgb(34, 34, 34);
+    text-align: left;
+    word-break: break-word;
+}
+#main_intro_text ul {
+    font-size: 20px;
+    padding: 10px;
+    line-height: 2;
     color: rgb(34, 34, 34);
     text-align: left;
     word-break: break-word;
@@ -470,7 +478,6 @@ header {
 
 .athletePage #main_intro_text h2 {
     font-size: 2em;
-    line-height: 35px;
 }
 
 .athletePage #main_intro_text li {

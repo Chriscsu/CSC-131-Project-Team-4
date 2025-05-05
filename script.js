@@ -35,8 +35,8 @@ async function addAthlete() {
         document.getElementById('athlete_interests').textContent = `Interests: ${athlete.interests || 'N/A'}`;
         document.getElementById('athlete_sport').textContent = `Sport: ${athlete.sport || 'N/A'}`;
         document.getElementById('athlete_socials').textContent = `Social: ${athlete.socialMedia || 'N/A'}`;
-        document.getElementById('athlete_stats').innerHTML = `Stats:<br>${addNewLine(athlete.stats)}`;
-        document.getElementById('athlete_summary').innerHTML = `Summary:<br>${addNewLine(athlete.summary)}`;        
+        document.getElementById('athlete_stats').innerHTML = `<strong>Stats:</strong><br>${addNewLine(athlete.stats)}`;
+        document.getElementById('athlete_summary').innerHTML = `<strong>Summary:</strong><br>${addNewLine(athlete.summary)}`;        
         document.getElementById('athlete_pop_up').style.display = 'flex';
         document.body.classList.add('athlete_open');
     });
