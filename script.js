@@ -88,12 +88,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
- function clickAnswer(item) {
-    let answer = item.querySelector(".faq_answer");
-    let arrow = item.querySelector(".arrow");
-    let isVisible = answer.style.display === "block";
-    answer.style.display = isVisible ? "none" : "block";
-    arrow.style.transform = isVisible ? "rotate(0deg)" : "rotate(90deg)";
+function clickAnswer(item) {
+  item.classList.toggle('open');
 }
 window.clickAnswer = clickAnswer;
 

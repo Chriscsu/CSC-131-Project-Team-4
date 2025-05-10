@@ -46,6 +46,7 @@ h2, h3{
 html, body{
     height: 100%;
     margin: 0;
+    scroll-behavior: smooth;
 }
 .font{
     font-family: var(--primary-font);
@@ -412,7 +413,7 @@ header {
     text-align: left;
     word-break: break-word;
 }
-#main_intro_text button{
+#main_intro_text button, #about_button button{
     margin-left:20px;
     background-color: black ;
     color: white;
@@ -422,7 +423,7 @@ header {
     padding-right: 20px;
     font-size: large;
 }
-#main_intro_text button:hover{
+#main_intro_text button:hover, #about_button button:hover{
     margin-left:20px;
     background-color: white ;
     color: black;
@@ -643,7 +644,7 @@ header {
     
 }
 
-.main button:hover {
+.main button:hover, #about_button button:hover {
     cursor: pointer;
 }
 
@@ -1146,12 +1147,29 @@ body.athlete_open {
 .faq_answer {
     font-size: 16px;
     color: rgb(218, 212, 212);
-    display: none;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.2s ease 0.1s;
+}
+
+.faq_item.open .faq_answer {
+  max-height: 500px;
+  opacity: 1;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+.faq_item .arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.faq_item.open .arrow {
+  transform: rotate(90deg);
 }
 
 .about_connect_section {
     margin-top: 20px;
-    margin-bottom: 43px;
     padding: 10px 40px 25px 0px;
     background-color: #FEFBEA;
     color: #000;
@@ -1172,18 +1190,6 @@ body.athlete_open {
     transition: transform 0.3s ease;
 }
 
-.connect_button {
-    background-color: #d1a95f;
-    color: #FEFBEA;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 3px;
-}
-
-.connect_button:hover {
-    background-color: #b88a4f;
-}
 
 
 /* CONTACT SECION*/
