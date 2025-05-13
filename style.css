@@ -1201,7 +1201,8 @@ body.athlete_open {
 /* CONTACT SECION*/
 .contact_flex-container {
     display: flex; 
-    flex-direction: row;
+    flex-direction:column;
+    align-items: center;
     background-color: #FEFBEA;
     padding-top:1%;
     gap: 2rem;
@@ -1220,15 +1221,11 @@ body.athlete_open {
 }
 .column-2 {
     display:flex;
-    flex:4;
     flex-direction: column;
-    padding-left: 5%;
-    padding-right: 0%;
-    margin: 0%;
+    width: max-content;
 }
 .column-3 {
     display:flex;
-    flex:2;
     flex-direction: column;
     padding-right:10%;
     text-align: center;
@@ -1296,10 +1293,14 @@ body.athlete_open {
 
 .get_in_touch_title {
     display:flex;
-    font-size: 36px;
-    font-weight: bold;
+    font-size: 56px;
+    font-weight: 500;
     margin-bottom: 20px;
     text-align: center;
+}
+.contact_text {
+    font-size: 26px;
+
 }
 
 .contact_us {
@@ -1317,11 +1318,10 @@ body.athlete_open {
 
 .contact_section_title {
     display: flex;
-    text-align: left;
+    text-align: center;
     font-size: 36px;
     margin-top: 20px;
     font-weight: bold;
-    text-decoration: underline;
     
 }
 
@@ -1329,40 +1329,44 @@ body.athlete_open {
     font-size: 18px;
     font-family: var(--primary-font);
     border-radius: 10px;
-    text-align: center;
+    text-align: left;
     justify-content: center;
 }
-.form_hover:hover{
+/* .form_hover:hover{
     transform: scale(1.050);
-}
+} */
+input[type=text]:focus {
+    border: 3px solid #555;
+  }
 
 .textarea{
     width: 100%;
-    max-width: 500px;
     height: 30px;
-    overflow: auto;
+    padding: 20px;
+    align-items: center;
     border-color: grey;
     border-width: 2px;
     font-family: var(--primary-font)
 }
 
-.submit{
-    width: 75px;
-    height: 40px;
-    font-size: 18px;
-    background-color: #d1a95f;
-    border-color: black;
-    font-size: 16px;
+.submit_1{
+    background-color: black;
+    border: 2px solid transparent;
+    font-weight: 450;
+    color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
     cursor: pointer;
-    border-radius: 10px;
-    box-shadow: -2px 2px 7px;
-    
 }
-.submit:hover{
-    opacity: 80%;
-    transform: scale(1.040);
+.submit_1:hover{
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    border-radius: 20px;
 }
-
 .contact_us input, .contact_us textarea {
     background-color: #ffffff;
     border: 1px solid #000;
