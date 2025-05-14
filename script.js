@@ -20,13 +20,15 @@ async function addAthlete() {
     const figcaption = document.createElement('figcaption');
    
     img.src = imgUrl;
+    img.alt = athlete.name
     figcaption.innerHTML = `${athlete.name}<br>${athlete.sport}<br>${athlete.class}<br>`
     figure.appendChild(img);
     figure.appendChild(figcaption);
     container.appendChild(figure);
-
+    
     figure.addEventListener('click', () => {
-        document.getElementById('athlete_image').src = imgUrl;
+        const img = document.getElementById("athlete_image");
+        img.src = imgUrl;
         document.getElementById('athlete_name').innerHTML = `<strong>${athlete.name || ''}</strong>`;
         document.getElementById('athlete_school').textContent = `School: ${athlete.school || 'N/A'}`;
         document.getElementById('athlete_weight').textContent = `Weight: ${athlete.weight || 'N/A'} lbs`;
@@ -40,6 +42,7 @@ async function addAthlete() {
         document.getElementById('athlete_pop_up').style.display = 'flex';
         document.body.classList.add('athlete_open');
     });
+    
 });
 }
 function addNewLine(text) {
