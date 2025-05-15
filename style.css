@@ -713,6 +713,7 @@ hover {
 }
 
 #home_feature_featuredAthletes figcaption {
+    font-size: large;
     color: white;
     font-family: var(--secondary-font);
     text-align: center;
@@ -773,7 +774,7 @@ hover {
     max-height: 350px;
     width: auto;
     height: auto;
-    border-radius: 10px;
+    border-radius: 15px;
     object-fit: contain;
 }
 

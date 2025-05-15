@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Players Club Management</title>
+    <!-- SEO for Website -->
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="description" content="Welcome to Player Club Management, Unlock your full potential in the NIL space with a team that puts athletes first. Whether you're a student-athlete looking to maximize your brand or a business searching for top-tier athlete partnerships.">
+    <meta name="author" content="Player Club Management">
+
+
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
@@ -18,7 +24,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/logo/favicon-16x16.png">
     <link rel="manifest" href="/logo/site.webmanifest">
 </head>
-<body style= "background: linear-gradient(rgba(10, 10, 10, .8) 40%, rgb(34, 34, 34) 90%)">
+<body style= "background: rgba(10, 10, 10, .8)">
     <header >
             <nav class="navbar">
                 <div class="navbar_cont">
@@ -38,9 +44,9 @@
                     <ul class="hovercolor">
                             <li class="nav_item"> <a href="index.html" class="nav_link"> Home</a> </li>
                             <li class="nav_item"> <a href="athletes.html" class="nav_link"> Athletes</a> </li>
-                            <li class="nav_item"> <a href="about.html" class="nav_link"> About us</a> </li>
+                            <li class="nav_item"> <a href="about.html" class="nav_link"> About Us</a> </li>
                             <li class="nav_item"> <a href="Services.html" class="nav_link"> Services</a> </li>
-                            <li class="nav_item"> <a href="Contact.html" class="nav_item_btn nav_link"> Contact Us</a> </li>
+                            <li class="nav_item"> <a href="Contact.html" class="nav_item_btn nav_link" style="text-wrap: nowrap;"> Contact Us</a> </li>
                     </ul>
                 </div>
             </nav>
@@ -149,19 +155,19 @@
     </main>
     <section id="home_feature_getStarted" class="main_column">
         <div class="main_text_container">              <!--Text Container-->
-            <div class = get_started>
+            <div class = "get_started">
                 <span class="get_started_title">Get Started Today</span>
                 <p>
                 Join Players Club Management and take control of your NIL future. Whether you're an athlete or a brand, we're ready to help you succeed.
                 </p>
             </div>
-            
+            <div class="button_container">
+                <a href="./Contact.html">
+                    <button class="">Contact Us</button>
+                </a>
+            </div>
         </div> 
-        <div class="button_container">
-            <a href="./Contact.html">
-                <button class="">Contact Us</button>
-            </a>
-        </div>
+
         <!--<div class="main_image_container">          !--Image Container--
             <div class="main_image_placeholder">Image</div>
         </div>-->
@@ -197,7 +203,7 @@
         </div>
             <div class="footer_social">
                 <p>Follow Us</p>
-                <a href="https://www.instagram.com/playersclubmgmt" target="_blank" class="instagram_icon">
+                <a href="https://www.instagram.com/playersclubmgmt" target="_blank" class="instagram_icon" aria-label="Visit our Instagram page">
                     <i class="fab fa-instagram"></i>
                 </a>
             </div>
@@ -207,7 +213,7 @@
         <div class="main_athlete_card">
           <span id="close_athlete" class="close">&times;</span>
           <div class="main_athlete_text">
-            <img id="athlete_image" src="" class="main_athlete_image">
+            <img id="athlete_image" src="" class="main_athlete_image" alt="">
             <div class="athlete_details">
               <h1 id="athlete_name"></h2>
                  <p id="athlete_school"></p>
