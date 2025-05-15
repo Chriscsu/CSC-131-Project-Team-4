@@ -151,6 +151,9 @@ header {
     color: var(--hover-color)!important;
 }
 
+.nav_link.active {
+    text-decoration: underline;
+}
 
 @media screen and (max-width: 900px) {
     .navbar_cont {
